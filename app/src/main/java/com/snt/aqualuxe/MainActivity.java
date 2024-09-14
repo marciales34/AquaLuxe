@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,17 +24,20 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    //Cambio de activity Splash
     @Override
     protected void onStart() {
         super.onStart();
 
-        Intent intent;
-        new Timer().schedule({
-                intent = new Intent(MainActivity.this, Login.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                StartActivity();
+//sjjdfgj
+        new Timer().schedule(new TimerTask() { // Se agrega TimerTask
 
-        },3000);
+            public void run() {
+                Intent intent;
+                intent = new Intent(MainActivity.this, Login.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent); // Se agrega intent al startActivity
+                finish(); // Finaliza la SplashActivity
+            }
+        }, 2000); // 3000 milisegundos = 3 segundos
     }
+
 }
