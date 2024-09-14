@@ -23,7 +23,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/montserrat_extrabold_italic"
         android:text="BIENVENIDO"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -36,8 +36,8 @@
 
     <Button
         android:id="@+id/InicioSesion"
-        android:layout_width="232dp"
-        android:layout_height="54dp"
+        android:layout_width="230dp"
+        android:layout_height="63dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Iniciar Sesión"
@@ -49,17 +49,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.187" />
-
-    <View
-        android:layout_width="290dp"
-        android:layout_height="1dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.809" />
 
     <Button
         android:id="@+id/google"
@@ -74,7 +63,18 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.887" />
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
 
     <Button
         android:id="@+id/Registrar"

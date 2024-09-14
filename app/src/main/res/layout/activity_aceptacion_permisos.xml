@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AceptacionPermisos">
+
+
+    <TextView
+        android:id="@+id/textview_aceptacionpermisos"
+        android:layout_width="256dp"
+        android:layout_height="106dp"
+        android:fontFamily="@font/montserrat_bold_italic"
+        android:text="Lee nuestras condiciones y permisos"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/textViewConditions"
+        android:layout_width="331dp"
+        android:layout_height="384dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/montserrat_light"
+        android:padding="16dp"
+        android:text="Aquí van las condiciones de uso y permisos."
+        android:textColor="@android:color/black"
+        android:textIsSelectable="true"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConditions"
+        android:fontFamily="@font/montserrat_semibold"
+        android:padding="8dp"
+        android:text="Acepto los términos y condiciones"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <Button
+        android:id="@+id/btn_aceptarpermisos"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CambioFotoPerfil">
+
+    <TextView
+        android:id="@+id/textview_cambiofoto"
+        android:layout_width="256dp"
+        android:layout_height="106dp"
+        android:fontFamily="@font/montserrat_bold_italic"
+        android:text="Asigna una foto de perfil nueva"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="265dp"
+        android:layout_height="267dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fotoperfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/btn_cambiofotocontinuar"
+        android:layout_width="175dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Continuar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="175dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Seleccionar Imagen"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
