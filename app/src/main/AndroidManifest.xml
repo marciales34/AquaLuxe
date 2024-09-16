@@ -26,6 +26,9 @@
         <activity
             android:name=".admin.InicioAdmin"
             android:exported="false" />
+
+        <activity android:name=".Trabajadores.inicioTrabajadores"
+            android:exported="false" />
         <activity
             android:name=".CambioFotoPerfil"
             android:exported="true" />
