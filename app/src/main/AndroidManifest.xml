@@ -27,6 +27,21 @@
             android:name=".Clientes.PaginaReservasClientes"
             android:exported="false" />
         <activity
+            android:name=".Admin.ModificarAutolavado"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CrearAutolavado"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Autolavados"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ModificarEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.CrearEmpleado"
+            android:exported="false" />
+        <activity
             android:name=".Admin.Empleados"
             android:exported="false" />
         <activity
