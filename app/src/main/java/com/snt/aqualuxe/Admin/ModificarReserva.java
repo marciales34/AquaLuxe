@@ -1,4 +1,4 @@
-package com.snt.aqualuxe.admin;
+package com.snt.aqualuxe.Admin;
 
 import android.os.Bundle;
 
@@ -10,13 +10,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.snt.aqualuxe.R;
 
-public class InicioAdmin extends AppCompatActivity {
+public class ModificarReserva extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio_admin);
+        setContentView(R.layout.activity_modificar_reserva);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

@@ -21,22 +21,25 @@
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
         <activity
+            android:name=".VistaRoles"
+            android:exported="false" />
+        <activity
             android:name=".Clientes.PaginaReservasClientes"
             android:exported="false" />
         <activity
-            android:name=".admin.Empleados"
+            android:name=".Admin.Empleados"
             android:exported="false" />
         <activity
-            android:name=".admin.ModificarReserva"
+            android:name=".Admin.ModificarReserva"
             android:exported="false" />
         <activity
-            android:name=".admin.CrearReserva"
+            android:name=".Admin.CrearReserva"
             android:exported="false" />
         <activity
-            android:name=".admin.Reservas"
+            android:name=".Admin.Reservas"
             android:exported="false" />
         <activity
-            android:name=".admin.InicioAdmin"
+            android:name=".Admin.InicioAdmin"
             android:exported="false" />
         <activity
             android:name=".Trabajadores.inicioTrabajadores"
