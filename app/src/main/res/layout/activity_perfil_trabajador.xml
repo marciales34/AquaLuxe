@@ -176,7 +176,7 @@
         android:id="@+id/inicioSesion"
         android:layout_width="231dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="132dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Iniciar Sesión"
