@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFFFFF"
-    tools:context=".admin.Empleados">
+    android:background="@color/white"
+    tools:context=".Admin.Empleados">
 
     <Button
-        android:id="@+id/btn_crear_empleado"
+        android:id="@+id/btn_empleados"
         android:layout_width="352dp"
         android:layout_height="96dp"
         android:backgroundTint="@color/green"
@@ -17,11 +17,13 @@
         android:paddingLeft="28dp"
         android:text=" Crear empleado"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:cornerRadius="20dp"
-        app:icon="@drawable/icon_calendario_crear"
+        app:icon="@drawable/icon_crear_persona"
         app:iconPadding="8dp"
         app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -63,6 +65,7 @@
             android:backgroundTint="#00FFFFFF"
             app:icon="@drawable/icon_menu"
             app:iconSize="40dp"
+            app:iconTint="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mis Empleados"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,11 +98,52 @@
         app:layout_constraintVertical_bias="0.414" />
 
     <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="354dp"
         android:layout_height="106dp"
         android:background="@drawable/rounded_background"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="365dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <Button
+            android:id="@+id/btn_detalles"
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:background="#00FFFFFF"
+            android:text="Button"
+            android:textColor="@color/black"
+            app:icon="@drawable/icon_flecha_derecha"
+            app:iconPadding="2dp"
+            app:iconSize="50dp"
+            app:iconTint="@color/black" />
+
+        <TextView
+            android:id="@+id/text_nombre"
+            android:layout_width="241dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="Nombre del empleado"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="354dp"
+        android:layout_height="106dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752">
 
         <Button
             android:id="@+id/button"
@@ -121,6 +166,43 @@
             android:gravity="center_vertical"
             android:text="Nombre del empleado"
             android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="354dp"
+        android:layout_height="106dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:background="#00FFFFFF"
+            android:text="Button"
+            android:textColor="@color/black"
+            app:icon="@drawable/icon_flecha_derecha"
+            app:iconPadding="2dp"
+            app:iconSize="50dp"
+            app:iconTint="@color/black" />
+
+        <TextView
+            android:id="@+id/text_nombre"
+            android:layout_width="241dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="Nombre del empleado"
+            android:textAlignment="center"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </FrameLayout>
 

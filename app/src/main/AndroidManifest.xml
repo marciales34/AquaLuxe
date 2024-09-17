@@ -21,44 +21,68 @@
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
         <activity
-            android:name=".admin.Empleados"
+            android:name=".VistaRoles"
             android:exported="false" />
         <activity
-            android:name=".admin.ModificarReserva"
+            android:name=".Clientes.PaginaReservasClientes"
             android:exported="false" />
         <activity
-            android:name=".admin.CrearReserva"
+            android:name=".Admin.ModificarAutolavado"
             android:exported="false" />
         <activity
-            android:name=".admin.Reservas"
+            android:name=".Admin.CrearAutolavado"
             android:exported="false" />
         <activity
-            android:name=".admin.InicioAdmin"
-            android:exported="false" />
-
-        <activity android:name=".Trabajadores.inicioTrabajadores"
+            android:name=".Admin.Autolavados"
             android:exported="false" />
 
         <activity android:name=".Trabajadores.perfilTrabajador"
             android:exported="false" />
 
         <activity
-            android:name=".CambioFotoPerfil"
-            android:exported="true" />
-        <activity
-            android:name=".AceptacionPermisos"
+            android:name=".Admin.ModificarEmpleado"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name=".Admin.CrearEmpleado"
             android:exported="false" />
         <activity
-            android:name=".InicioDeSesion"
+            android:name=".Admin.Empleados"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Admin.ModificarReserva"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Admin.CrearReserva"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Reservas"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.InicioAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Trabajadores.inicioTrabajadores"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.CambioFotoPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.AceptacionPermisos"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.InicioDeSesion"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.PaginaInicioCliente"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
