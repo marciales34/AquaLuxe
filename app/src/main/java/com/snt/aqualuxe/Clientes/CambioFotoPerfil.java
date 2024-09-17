@@ -1,4 +1,4 @@
-package com.snt.aqualuxe;
+package com.snt.aqualuxe.Clientes;
 
 import android.Manifest;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -20,6 +19,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.exifinterface.media.ExifInterface;
+
+import com.snt.aqualuxe.R;
 
 import java.io.InputStream;
 import java.io.IOException;

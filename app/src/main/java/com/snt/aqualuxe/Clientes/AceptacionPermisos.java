@@ -1,4 +1,4 @@
-package com.snt.aqualuxe;
+package com.snt.aqualuxe.Clientes;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.snt.aqualuxe.R;
 
 public class AceptacionPermisos extends AppCompatActivity {
 
