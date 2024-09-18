@@ -5,15 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/linea_p3"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <View
+        android:id="@+id/linea_p1"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
     <TextView
         android:id="@+id/Datos_trabajador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="Datos trabajador"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenperfil1" />
 
     <Button
         android:id="@+id/btn_ActualizarDatos"
@@ -31,6 +58,7 @@
         app:layout_constraintVertical_bias="0.902" />
 
     <View
+        android:id="@+id/linea_p4"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -42,6 +70,7 @@
         app:layout_constraintVertical_bias="0.635" />
 
     <View
+        android:id="@+id/linea_p2"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -52,24 +81,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.532" />
 
-    <View
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479" />
-
     <TextView
         android:id="@+id/telefono_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Telefono"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_p3" />
 
     <EditText
         android:id="@+id/campo_correo"
@@ -89,11 +110,15 @@
         android:id="@+id/Ciudad_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Ciudad"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="514dp" />
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_p6" />
 
     <View
+        android:id="@+id/linea_p6"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -108,9 +133,12 @@
         android:id="@+id/Direccion_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Direccion"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_p4" />
 
     <EditText
         android:id="@+id/campo_nombre"
@@ -126,24 +154,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.507" />
 
-    <View
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
-
     <TextView
         android:id="@+id/Correo_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Correo"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_p2" />
 
     <EditText
         android:id="@+id/campo_direccion"
@@ -186,8 +206,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintTop_toBottomOf="@+id/campo_ciudad"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/campo_telefono"
@@ -255,7 +275,7 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imagenperfil1"
         android:layout_width="125dp"
         android:layout_height="117dp"
         app:srcCompat="@drawable/fotoperfil"
@@ -282,8 +302,11 @@
         android:id="@+id/Nombre_empleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Nombre"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_p1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

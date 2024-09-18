@@ -21,6 +21,9 @@
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".VistaRoles"
             android:exported="false" />
         <activity
@@ -35,10 +38,9 @@
         <activity
             android:name=".Admin.Autolavados"
             android:exported="false" />
-
-        <activity android:name=".Trabajadores.perfilTrabajador"
+        <activity
+            android:name=".Trabajadores.perfilTrabajador"
             android:exported="false" />
-
         <activity
             android:name=".Admin.ModificarEmpleado"
             android:exported="false" />

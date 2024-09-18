@@ -4,16 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="PaginaInicioCliente">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="PaginaReservasClientes">
-        <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-17T06:29:06.021161Z">
+        <DropdownSelection timestamp="2024-09-18T17:35:51.676791500Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=4a6b4676" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\CamiloM\.android\avd\Pixel_3a_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>

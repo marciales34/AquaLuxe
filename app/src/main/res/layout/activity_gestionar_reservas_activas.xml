@@ -19,13 +19,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
 
+
     <TextView
         android:id="@+id/tipo_vehiculo"
-        android:layout_width="119dp"
+        android:layout_width="113dp"
         android:layout_height="21dp"
+        android:layout_marginTop="12dp"
         android:text="Tipo de vehiculo"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="684dp" />
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_g6" />
 
     <TextView
         android:id="@+id/datos_del_vehiculo"
@@ -39,8 +43,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintTop_toBottomOf="@+id/linea_g3"
+        app:layout_constraintVertical_bias="0.055" />
 
     <EditText
         android:id="@+id/campo_placa"
@@ -85,7 +89,7 @@
         app:layout_constraintVertical_bias="0.74" />
 
     <View
-        android:id="@+id/view7"
+        android:id="@+id/linea_g5"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -96,16 +100,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.843" />
 
+
     <TextView
         android:id="@+id/color_vehiculo"
         android:layout_width="48dp"
         android:layout_height="20dp"
+        android:layout_marginTop="16dp"
         android:text="Color"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="633dp" />
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_g5" />
 
     <View
-        android:id="@+id/view6"
+        android:id="@+id/linea_g4"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -116,16 +124,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776" />
 
+
     <TextView
         android:id="@+id/placa_vehiculo"
         android:layout_width="46dp"
         android:layout_height="19dp"
+        android:layout_marginTop="12dp"
         android:text="Placa"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="581dp" />
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_g4" />
 
     <View
-        android:id="@+id/view5"
+        android:id="@+id/linea_g6"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -136,54 +148,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.915" />
 
+
     <TextView
         android:id="@+id/nombre_prop2"
         android:layout_width="55dp"
         android:layout_height="18dp"
+        android:layout_marginTop="16dp"
         android:text="Marca"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="529dp" />
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_del_vehiculo" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="412dp"
-        android:layout_height="55dp"
-        android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
 
-        <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:backgroundTint="#00FFFFFF"
-            app:icon="@drawable/icon_menu"
-            app:iconSize="40dp"
-            app:iconTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/text_aqualuxe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="AQUALUXE"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </FrameLayout>
 
     <TextView
-        android:id="@+id/gestionar_activas"
+        android:id="@+id/descripcion_reserva"
         android:layout_width="328dp"
         android:layout_height="37dp"
         android:fontFamily="@font/montserrat_bold"
@@ -240,16 +220,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.532" />
 
+
     <TextView
         android:id="@+id/telefono_prop"
         android:layout_width="70dp"
         android:layout_height="21dp"
+        android:layout_marginTop="16dp"
         android:text="Telefono"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="430dp" />
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_g2" />
 
     <View
-        android:id="@+id/view4"
+        android:id="@+id/linea_g3"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -264,20 +248,27 @@
         android:id="@+id/nombre_prop"
         android:layout_width="95dp"
         android:layout_height="45dp"
+        android:layout_marginTop="8dp"
         android:text="Nombre del propietario"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datos_propietario" />
+
 
     <TextView
         android:id="@+id/correo_prop"
         android:layout_width="46dp"
         android:layout_height="19dp"
+        android:layout_marginTop="12dp"
         android:text="Correo"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_g1" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/linea_g2"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -303,7 +294,7 @@
         app:layout_constraintVertical_bias="0.605" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/linea_g1"
         android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="@color/black"
@@ -355,10 +346,13 @@
     <RelativeLayout
         android:layout_width="243dp"
         android:layout_height="95dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/rounded_background"
         android:backgroundTint="#A8A8A8"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="147dp">
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_reserva">
 
         <View
             android:id="@+id/view"

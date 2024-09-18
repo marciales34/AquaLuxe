@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/btn_reservas_trabajadores2"
+        android:id="@+id/reservas_tr2"
         android:layout_width="344dp"
         android:layout_height="146dp"
         android:layout_gravity="center"
@@ -19,13 +19,8 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782">
+        app:layout_constraintVertical_bias="0.842">
 
-        <!-- Contenedor para la fecha y hora -->
-
-        <!-- Línea separadora vertical -->
-
-        <!-- Texto central -->
 
         <LinearLayout
             android:id="@+id/date_time_container"
@@ -40,16 +35,16 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/date_text_22_agosto"
+                android:id="@+id/date_text_22_agosto_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="22 de agosto"
+                android:text="18 de agosto"
                 android:textColor="#000000"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/time_text_10_30"
+                android:id="@+id/time_text_10_30_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
@@ -81,11 +76,11 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/reservaActiva"
+            android:id="@+id/reservaActivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:text="Activo"
             android:textColor="@color/green"
             android:textSize="20sp"
@@ -94,7 +89,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/btn_reservas_trabajadores2"
+        android:id="@+id/reservas_tr1"
         android:layout_width="344dp"
         android:layout_height="146dp"
         android:layout_gravity="center"
@@ -109,14 +104,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.276">
 
-        <!-- Contenedor para la fecha y hora -->
-
-        <!-- Línea separadora vertical -->
-
-        <!-- Texto central -->
 
         <LinearLayout
-            android:id="@+id/date_time_container"
+            android:id="@+id/date_time_container_1"
             android:layout_width="wrap_content"
             android:layout_height="78dp"
             android:layout_alignParentStart="true"
@@ -128,7 +118,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/date_text_22_agosto"
+                android:id="@+id/date_text_22_agosto_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
@@ -137,7 +127,7 @@
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/time_text_10_30"
+                android:id="@+id/time_text_10_30_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
@@ -151,19 +141,19 @@
             android:layout_height="114dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="10dp"
-            android:layout_toStartOf="@id/central_text_ferrari"
-            android:layout_toEndOf="@+id/date_time_container"
+            android:layout_toStartOf="@id/central_text_Mustang"
+            android:layout_toEndOf="@+id/date_time_container_1"
             android:background="#000000" />
 
         <TextView
-            android:id="@+id/central_text_ferrari"
+            android:id="@+id/central_text_Mustang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="16dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="FERRARI"
+            android:text="MUSTANG"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="22sp" />
@@ -181,7 +171,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/text_reservaciones_trabajadores"
+        android:id="@+id/reservas_p1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_bold"
@@ -207,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.554" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -247,26 +237,28 @@
             android:textStyle="bold" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver mas "
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="352dp" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/ver_mas_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ver mas "
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservas_tr1" />
+
+    <TextView
+        android:id="@+id/ver_mas_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:text="Ver mas "
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

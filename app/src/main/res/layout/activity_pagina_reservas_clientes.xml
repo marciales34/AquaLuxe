@@ -34,7 +34,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/btn_reservas_trabajadores2"
+        android:id="@+id/reservas_tr2"
         android:layout_width="344dp"
         android:layout_height="146dp"
         android:layout_gravity="center"
@@ -91,12 +91,12 @@
             android:layout_height="114dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="10dp"
-            android:layout_toStartOf="@id/central_text_ferrari"
+            android:layout_toStartOf="@id/central_text_Mustang"
             android:layout_toEndOf="@+id/date_time_container"
             android:background="#000000" />
 
         <TextView
-            android:id="@+id/central_text_ferrari"
+            android:id="@+id/central_text_Mustang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
