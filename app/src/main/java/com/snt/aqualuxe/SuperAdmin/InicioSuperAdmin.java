@@ -1,4 +1,4 @@
-package com.snt.aqualuxe.Admin;
+package com.snt.aqualuxe.SuperAdmin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,16 +11,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.snt.aqualuxe.Admin.Autolavados;
+import com.snt.aqualuxe.Admin.Empleados;
+import com.snt.aqualuxe.Admin.InicioAdmin;
+import com.snt.aqualuxe.Admin.Reservas;
 import com.snt.aqualuxe.Clientes.PerfilClientes;
 import com.snt.aqualuxe.R;
 
-public class InicioAdmin extends AppCompatActivity {
+public class InicioSuperAdmin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio_admin);
+        setContentView(R.layout.activity_inicio_super_admin);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -32,7 +36,7 @@ public class InicioAdmin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Reservas.class);
+                Intent intent = new Intent(InicioSuperAdmin.this, Reservas.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +46,7 @@ public class InicioAdmin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Empleados.class);
+                Intent intent = new Intent(InicioSuperAdmin.this, Empleados.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +57,7 @@ public class InicioAdmin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Autolavados.class);
+                Intent intent = new Intent(InicioSuperAdmin.this, Autolavados.class);
                 startActivity(intent);
             }
         });
@@ -63,10 +67,29 @@ public class InicioAdmin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, PerfilClientes.class);
+                Intent intent = new Intent(InicioSuperAdmin.this, PerfilClientes.class);
                 startActivity(intent);
             }
         });
 
+        Button btn5 = findViewById(R.id.btn_administradores);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(InicioSuperAdmin.this, Administradores.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn6 = findViewById(R.id.btn_Servicios);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(InicioSuperAdmin.this, Servicios.class);
+                startActivity(intent);
+            }
+        });
     }
 }

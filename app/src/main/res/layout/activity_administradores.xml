@@ -6,44 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Admin.Empleados">
-
-    <Button
-        android:id="@+id/btn_empleado"
-        android:layout_width="352dp"
-        android:layout_height="96dp"
-        android:backgroundTint="@color/green"
-        android:fontFamily="@font/montserrat_bold"
-        android:paddingLeft="28dp"
-        android:text=" Crear empleado"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:cornerRadius="20dp"
-        app:icon="@drawable/icon_crear_persona"
-        app:iconPadding="8dp"
-        app:iconSize="60dp"
-        app:iconTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+    tools:context=".SuperAdmin.Administradores">
 
     <TextView
-        android:id="@+id/text_empleados"
+        android:id="@+id/text_mis_administradores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Empleados"
-        android:textColor="@color/blue"
-        android:textSize="24sp"
+        android:text="Mis Administradores"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -84,18 +61,18 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/text_mis_empleados"
+        android:id="@+id/text_administradores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mis Empleados"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="administradores"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintVertical_bias="0.145" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
@@ -123,16 +100,36 @@
             app:iconTint="@color/black" />
 
         <TextView
-            android:id="@+id/text_nombre_empleado1"
+            android:id="@+id/text_nombre_administrador"
             android:layout_width="241dp"
             android:layout_height="86dp"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="Nombre del empleado"
+            android:text="Nombre del administrador"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </FrameLayout>
 
-
+    <Button
+        android:id="@+id/btn_administrador"
+        android:layout_width="352dp"
+        android:layout_height="96dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingLeft="28dp"
+        android:text=" Crear administrador"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_crear_persona"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-

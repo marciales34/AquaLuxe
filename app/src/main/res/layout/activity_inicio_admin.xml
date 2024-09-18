@@ -138,11 +138,7 @@
         app:layout_constraintVertical_bias="0.569" />
 
     <TextView
-<<<<<<< HEAD
         android:id="@+id/text_reservas"
-=======
-        android:id="@+id/text_reservas_inicio_admin"
->>>>>>> 5b5ab85899a59acde8aa9f7249406d075e97cca3
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reservas"

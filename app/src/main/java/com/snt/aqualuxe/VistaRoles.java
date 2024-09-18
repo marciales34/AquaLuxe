@@ -15,6 +15,7 @@ import com.snt.aqualuxe.Admin.InicioAdmin;
 import com.snt.aqualuxe.Clientes.InicioDeSesion;
 import com.snt.aqualuxe.Clientes.Login;
 import com.snt.aqualuxe.Clientes.PaginaInicioCliente;
+import com.snt.aqualuxe.SuperAdmin.InicioSuperAdmin;
 import com.snt.aqualuxe.Trabajadores.inicioTrabajadores;
 
 public class VistaRoles extends AppCompatActivity {
@@ -56,6 +57,16 @@ public class VistaRoles extends AppCompatActivity {
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
                 Intent intent = new Intent(VistaRoles.this, PaginaInicioCliente.class);
+                startActivity(intent);
+            }
+        });
+
+        Button Super = findViewById(R.id.btn_super);
+        Super.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(VistaRoles.this, InicioSuperAdmin.class);
                 startActivity(intent);
             }
         });

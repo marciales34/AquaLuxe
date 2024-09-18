@@ -20,7 +20,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SuperAdmin.ModificarServicio"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.CrearServicio"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.Servicios"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.ModificarAdministrador"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.CrearAdministrador"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.Administradores"
+            android:exported="false" />
+        <activity
+            android:name=".SuperAdmin.InicioSuperAdmin"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
