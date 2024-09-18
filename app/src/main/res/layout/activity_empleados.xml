@@ -123,15 +123,87 @@
             app:iconTint="@color/black" />
 
         <TextView
-            android:id="@+id/text_nombre"
+            android:id="@+id/text_nombre_empleado1"
             android:layout_width="241dp"
             android:layout_height="86dp"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="Nombre del empleado"
-            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </FrameLayout>
 
+<<<<<<< HEAD
+=======
+    <FrameLayout
+        android:layout_width="354dp"
+        android:layout_height="106dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:background="#00FFFFFF"
+            android:text="Button"
+            android:textColor="@color/black"
+            app:icon="@drawable/icon_flecha_derecha"
+            app:iconPadding="2dp"
+            app:iconSize="50dp"
+            app:iconTint="@color/black" />
+
+        <TextView
+            android:id="@+id/text_nombre2"
+            android:layout_width="241dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="Nombre del empleado"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="354dp"
+        android:layout_height="106dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:background="#00FFFFFF"
+            android:text="Button"
+            android:textColor="@color/black"
+            app:icon="@drawable/icon_flecha_derecha"
+            app:iconPadding="2dp"
+            app:iconSize="50dp"
+            app:iconTint="@color/black" />
+
+        <TextView
+            android:id="@+id/text_nombre3"
+            android:layout_width="241dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="Nombre del empleado"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+>>>>>>> 5b5ab85899a59acde8aa9f7249406d075e97cca3
 </androidx.constraintlayout.widget.ConstraintLayout>

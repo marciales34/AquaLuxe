@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".Clientes.AgendarReservasClientes"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-62dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="388dp"
+            android:layout_height="55dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#00FFFFFF"
+                app:icon="@drawable/icon_menu"
+                app:iconSize="40dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_aqualuxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="AQUALUXE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_agendar_reservaciones_clientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Agendar Reservas"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+        <Spinner
+            android:id="@+id/spinner_opciones"
+            android:layout_width="338dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#000000"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_seleccionar_autolavado_cliente" />
+
+        <TextView
+            android:id="@+id/text_seleccionar_autolavado_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Autolavado"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_agendar_reservaciones_clientes" />
+
+        <Button
+            android:id="@+id/btn_select_date"
+            android:layout_width="337dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Seleccionar Fecha"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_seleccionar_fecha_cliente" />
+
+
+        <Button
+            android:id="@+id/btn_buscar_disponibilidad_clientes"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Buscar disponibilidad"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_select_date" />
+
+        <TextView
+            android:id="@+id/text_seleccionar_fecha_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Fecha"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_opciones" />
+
+
+        <TextView
+            android:id="@+id/text_reservas_dispnibles_clientes"
+            android:layout_width="258dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Reservas Disponibles"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_buscar_disponibilidad_clientes" />
+
+        <RelativeLayout
+            android:id="@+id/btn_reservas_dispinibles_clientes1"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="#A8A8A8"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_reservas_dispnibles_clientes"
+            app:layout_constraintVertical_bias="0.109">
+
+            <LinearLayout
+                android:id="@+id/date_time_container"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="158dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/central_text_hora_reserva"
+                android:layout_toEndOf="@+id/date_time_container"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/central_text_hora_reserva"
+                android:layout_width="122dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-light"
+                android:text="10:00 AM"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/date_text_18_agosto_dispo"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="18 de agosto"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_reservas_dispinibles_clientes2"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="#A8A8A8"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_reservas_dispinibles_clientes1"
+            app:layout_constraintVertical_bias="0.253">
+
+            <LinearLayout
+                android:id="@+id/date_time_container2"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="158dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/central_text_hora_reserva2"
+                android:layout_toEndOf="@+id/date_time_container2"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/central_text_hora_reserva2"
+                android:layout_width="122dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-light"
+                android:text="11:30 AM"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/date_text_18_agosto_dispo2"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="18 de agosto"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_reservas_dispinibles_clientes3"
+            android:layout_width="339dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="#A8A8A8"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_reservas_dispinibles_clientes2"
+            app:layout_constraintVertical_bias="0.36">
+
+            <LinearLayout
+                android:id="@+id/date_time_container3"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="158dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/central_text_hora_reserva3"
+                android:layout_toEndOf="@+id/date_time_container3"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/central_text_hora_reserva3"
+                android:layout_width="122dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-light"
+                android:text="12:30 AM"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/date_text_18_agosto_dispo3"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="18 de agosto"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_continuar_disponibilidad_clientes2"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Continuar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_reservas_dispinibles_clientes3" />
+
+        <TextView
+            android:id="@+id/btn_continuar_disponibilidad_clientes3"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Volver"
+            android:textColor="#FFFFFF"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_continuar_disponibilidad_clientes2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

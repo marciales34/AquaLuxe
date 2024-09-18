@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Clientes.RegistrarVehiculosClientes">
+
+    <RelativeLayout
+        android:id="@+id/btn_mis_vehiculos_clientes_mustang"
+        android:layout_width="311dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#A8A8A8"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67">
+
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="114dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="153dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/central_text_mustang_Vehiculos"
+            android:layout_width="142dp"
+            android:layout_height="73dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="MUSTANG Negro"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="132dp"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="7dp"
+            app:srcCompat="@drawable/bmwz4" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_crear_vehiculos_clientes"
+        android:layout_width="309dp"
+        android:layout_height="93dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/montserrat_bold"
+        android:paddingLeft="28dp"
+        android:text="Registrar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/vehiculo"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/text_gestionar_vehiculos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Gestiona tus vehiculos"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/text_gestionar_misvehiculos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Gestiona tus vehiculos"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/icon_menu"
+            app:iconSize="40dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_aqualuxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="AQUALUXE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_mis_vehiculos_clientes_bmwz4"
+        android:layout_width="311dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#A8A8A8"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891">
+
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="114dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="153dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/central_text_bmwz4_Vehiculos"
+            android:layout_width="142dp"
+            android:layout_height="73dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="BMW Z4 Negro"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView7_bmwz4"
+            android:layout_width="132dp"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginBottom="7dp"
+            app:srcCompat="@drawable/vehiculo2" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

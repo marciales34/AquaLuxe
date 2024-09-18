@@ -20,6 +20,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".Clientes.PRUEBA"
+            android:exported="false"
+            android:label="@string/title_activity_prueba" />
+        <activity
+            android:name=".Clientes.UbicacionClientes"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.GestionarVehiculosClientes"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.RegistrarVehiculosClientes"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.CambioPasswordCliente"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.PerfilClientes"
+            android:exported="false" />
+        <activity
+            android:name=".Clientes.RealizarReservaClientes"
+            android:exported="true" />
+        <activity
+            android:name=".Clientes.AgendarReservasClientes"
+            android:exported="false" />
         <activity
             android:name=".Admin.ReservasDisponibles"
             android:exported="false" />
@@ -37,6 +78,9 @@
             android:exported="false" />
         <activity
             android:name=".Admin.Autolavados"
+            android:exported="false" />
+        <activity
+            android:name=".Trabajadores.perfilTrabajador"
             android:exported="false" />
         <activity
             android:name=".Admin.ModificarEmpleado"
@@ -73,7 +117,7 @@
             android:exported="false" />
         <activity
             android:name=".Clientes.InicioDeSesion"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Clientes.Login"
             android:exported="false" />

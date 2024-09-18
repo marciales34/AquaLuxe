@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Clientes.UbicacionClientes">
+
+    <TextView
+        android:id="@+id/textView_seleccionar_punto_cercano"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Selecciona el punto mas cercano a tu ubicacion"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <Button
+        android:id="@+id/btn_establecer_ruta"
+        android:layout_width="255dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Establecer ruta"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <Button
+        android:id="@+id/btn_seleccionar_ruta"
+        android:layout_width="255dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Seleccionar ruta"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <TextView
+        android:id="@+id/text_ubicacion_clientes"
+        android:layout_width="301dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="¿Donde estamos ubicados?"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/icon_menu"
+            app:iconSize="40dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_aqualuxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="AQUALUXE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
