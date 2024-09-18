@@ -35,10 +35,6 @@
         <activity
             android:name=".Admin.Autolavados"
             android:exported="false" />
-
-        <activity android:name=".Trabajadores.perfilTrabajador"
-            android:exported="false" />
-
         <activity
             android:name=".Admin.ModificarEmpleado"
             android:exported="false" />
@@ -62,6 +58,15 @@
             android:exported="false" />
         <activity
             android:name=".Trabajadores.inicioTrabajadores"
+            android:exported="false" />
+        <activity
+            android:name=".Trabajadores.reservaTrabajadores"
+            android:exported="false" />
+        <activity android:name=".Trabajadores.gestionarReservasActivas"
+            android:exported="false" />
+        <activity android:name=".Trabajadores.gestionarReservasPendientes"
+            android:exported="false" />
+        <activity android:name=".Trabajadores.perfilTrabajador"
             android:exported="false" />
         <activity
             android:name=".Clientes.CambioFotoPerfil"
