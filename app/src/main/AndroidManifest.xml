@@ -21,6 +21,9 @@
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
         <activity
+            android:name=".Admin.ReservasDisponibles"
+            android:exported="false" />
+        <activity
             android:name=".VistaRoles"
             android:exported="false" />
         <activity
