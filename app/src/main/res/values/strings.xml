@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aqualuxe</string>
+    <string name="title_activity_ubicacion_prueba">UbicacionPrueba</string>
+    <string name="title_activity_prueba">PRUEBA</string>
 </resources>

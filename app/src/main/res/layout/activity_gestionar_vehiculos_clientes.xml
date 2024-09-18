@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".Clientes.GestionarVehiculosClientes"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-62dp">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="412dp"
+            android:layout_height="57dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#00FFFFFF"
+                app:icon="@drawable/icon_menu"
+                app:iconSize="40dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_aqualuxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="AQUALUXE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_gestionar_vehiculos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Datos de tu vehiculo"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+        <TextView
+            android:id="@+id/textView_marca_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Marca"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gestionar_vehiculos" />
+
+        <TextView
+            android:id="@+id/textView_container_nombre_perfil"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="BMW Z4"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_marca_vehiculo" />
+
+
+        <TextView
+            android:id="@+id/textView_tipo_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Tipo de vehiculo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_nombre_perfil" />
+
+        <TextView
+            android:id="@+id/textView_container_tipo_vehiculo"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Deportivo"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_tipo_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_modelo_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Modelo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_tipo_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_container_modelo_vehiculo"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="2024"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_modelo_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_placa_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Placa"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_modelo_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_container_placa_vehiculo"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="FALLINI"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_placa_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_color_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Color"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_placa_vehiculo" />
+
+        <TextView
+            android:id="@+id/textView_container_color_vehiculo"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Negro"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_color_vehiculo" />
+
+
+        <TextView
+            android:id="@+id/textView_cargar_imagenes_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Carga imagenes (opcional)"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_color_vehiculo" />
+
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="237dp"
+            android:layout_height="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Guardar Imagen"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_cargar_imagenes_vehiculo" />
+
+        <ImageView
+            android:id="@+id/fotos_vehiculo2"
+            android:layout_width="150dp"
+            android:layout_height="137dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carroo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
+
+        <ImageView
+            android:id="@+id/fotos_vehiculo1"
+            android:layout_width="150dp"
+            android:layout_height="137dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carroo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
+
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil2"
+            android:layout_width="281dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fotos_vehiculo1" />
+
+        <Button
+            android:id="@+id/btn_actualizar_vehiculo"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Actualizar Vehiculo"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
+
+        <Button
+            android:id="@+id/btn_eliminar_vehiculo"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Eliminar Vehiculo"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_vehiculo" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_vehiculo"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
