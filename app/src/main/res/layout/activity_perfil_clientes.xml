@@ -87,7 +87,7 @@
             app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
 
         <TextView
-            android:id="@+id/text_datos_personales_perfil"
+            android:id="@+id/datos_propietario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -109,7 +109,7 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_datos_personales_perfil" />
+            app:layout_constraintTop_toBottomOf="@+id/datos_propietario" />
 
 
         <TextView
@@ -167,7 +167,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
 
         <TextView
-            android:id="@+id/textView_container_correo_perfil"
+            android:id="@+id/textView_container_telefono_perfil"
             android:layout_width="250dp"
             android:layout_height="44dp"
             android:layout_marginTop="26dp"
@@ -190,7 +190,7 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_correo_perfil" />
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_telefono_perfil" />
 
 
         <TextView
@@ -208,7 +208,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil3" />
 
         <Button
-            android:id="@+id/button_container_contraseña_perfil"
+            android:id="@+id/button_container_correo_perfil"
             android:layout_width="250dp"
             android:layout_height="44dp"
             android:layout_marginTop="26dp"
@@ -232,7 +232,7 @@
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_container_contraseña_perfil" />
+            app:layout_constraintTop_toBottomOf="@+id/button_container_correo_perfil" />
 
 
         <TextView
@@ -277,7 +277,7 @@
 
 
         <TextView
-            android:id="@+id/textView_direccion_perfil"
+            android:id="@+id/textView_Marca_vehiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -318,7 +318,7 @@
 
 
         <TextView
-            android:id="@+id/textView_ciudad_perfil"
+            android:id="@+id/textView_placa_vehiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -347,7 +347,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil6" />
 
         <View
-            android:id="@+id/linea_datos_personales_perfil7"
+            android:id="@+id/linea_datos_vehiculo_2"
             android:layout_width="421dp"
             android:layout_height="1dp"
             android:layout_marginTop="26dp"
@@ -370,7 +370,7 @@
             android:textSize="16sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil7" />
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2" />
 
         <Button
             android:id="@+id/btn_actualizar_datos"

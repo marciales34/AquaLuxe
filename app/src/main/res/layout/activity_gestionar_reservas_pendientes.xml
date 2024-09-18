@@ -1,399 +1,524 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/campo_marca"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719" />
-
-    <TextView
-        android:id="@+id/tipo_vehiculo"
-        android:layout_width="119dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="12dp"
-        android:text="Tipo de vehiculo"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t6" />
-
-    <EditText
-        android:id="@+id/campo_color4"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87" />
-
-
-    <TextView
-        android:id="@+id/color_vehiculo4"
-        android:layout_width="48dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="16dp"
-        android:text="Color"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t5" />
-
-    <View
-        android:id="@+id/linea_t4"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756" />
-
-    <EditText
-        android:id="@+id/campo_placa4"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
-
-    <TextView
-        android:id="@+id/nombre_prop8"
-        android:layout_width="55dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="48dp"
-        android:text="Marca"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t3" />
-
-    <TextView
-        android:id="@+id/placa_vehiculo4"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="12dp"
-        android:text="Placa"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t4" />
-
-    <View
-        android:id="@+id/linea_t6"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
-
-    <EditText
-        android:id="@+id/campo_tipo4"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
-
-    <View
-        android:id="@+id/linea_t5"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
-
-    <EditText
-        android:id="@+id/campo_telefono_prop4"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
-
-    <TextView
-        android:id="@+id/datos_del_vehiculo4"
-        android:layout_width="216dp"
-        android:layout_height="31dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Datos del vehiculo"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.174"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.65" />
-
-    <View
-        android:id="@+id/linea_t3"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.635" />
-
-    <TextView
-        android:id="@+id/telefono_prop4"
-        android:layout_width="70dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="8dp"
-        android:text="Telefono"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t1" />
-
-    <EditText
-        android:id="@+id/campo_nombre5"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
-
-    <EditText
-        android:id="@+id/campo_correo_prop4"
-        android:layout_width="215dp"
-        android:layout_height="21dp"
-        android:background="@drawable/rounded_background"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
-
-    <View
-        android:id="@+id/linea_t1"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <View
-        android:id="@+id/linea_t2"
-        android:layout_width="350dp"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
-
-    <TextView
-        android:id="@+id/correo_prop4"
-        android:layout_width="46dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="8dp"
-        android:text="Correo"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linea_t2" />
-
-    <TextView
-        android:id="@+id/nombre_prop7"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
-        android:text="Nombre del propietario"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datos_propietario_pendientes" />
-
-    <TextView
-        android:id="@+id/datos_propietario_pendientes"
-        android:layout_width="216dp"
-        android:layout_height="31dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Datos del propietario"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.317" />
-
-    <RelativeLayout
-        android:id="@+id/recuadro"
-        android:layout_width="276dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_background"
-        android:backgroundTint="#A8A8A8"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gestionar_pendientes">
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="4dp"
-            android:layout_height="114dp"
-            android:layout_marginStart="130sp"
-            android:layout_marginEnd="10sp"
-            android:background="#000000" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".Trabajadores.gestionarReservasActivas"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-62dp">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/cargar_imagenes2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="24 de Agosto"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/time_text_10_35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_margin="30sp"
-            android:layout_marginStart="30sp"
-            android:layout_marginLeft="23dp"
-            android:layout_marginEnd="30sp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="10:30 AM"
+            android:text="Tomar o cargar imagenes (opcional)"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo1" />
+
+        <EditText
+            android:id="@+id/campo_color_vehiculo2"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Azul"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2"
+            tools:layout_editor_absoluteX="145dp" />
+
+        <View
+            android:id="@+id/linea_datos_vehiculo1"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/campo_color_vehiculo" />
+
+        <View
+            android:id="@+id/linea_datos_vehiculo_3"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cargar_imagenes" />
 
         <TextView
-            android:id="@+id/estado_reserva"
+            android:id="@+id/textView_placa_vehiculo4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="20sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="4dp"
-            android:text="Pendiente"
-            android:textColor="@color/orange"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Placa"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil6" />
+
+        <RelativeLayout
+            android:id="@+id/recuadro"
+            android:layout_width="276dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="#A8A8A8"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_activas">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="4dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="130sp"
+                android:layout_marginEnd="10sp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="24 de Agosto"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_text_10_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="30sp"
+                android:layout_marginStart="30sp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="10:30 AM"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/estado_reserva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="4dp"
+                android:text="Pendiente"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/texto_activas"
+            android:layout_width="328dp"
+            android:layout_height="37dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Descripcion de la Reserva"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="412dp"
+            android:layout_height="57dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#00FFFFFF"
+                app:icon="@drawable/icon_menu"
+                app:iconSize="40dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_aqualuxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="AQUALUXE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/datos_propietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Datos del propietario"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="280dp" />
+
+        <TextView
+            android:id="@+id/datos_propietario3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Datos del vehiculo"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="670dp" />
+
+        <TextView
+            android:id="@+id/cargar_imagenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Tomar o cargar imagenes (opcional)"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo1" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datos_propietario" />
+
+
+        <TextView
+            android:id="@+id/textView_nombre_propietario"
+            android:layout_width="117dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Nombre del propietario"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil" />
+
+        <TextView
+            android:id="@+id/textView_container_nombre_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Camilo Cardona"
+            android:textColor="#000000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil" />
 
-    </RelativeLayout>
+        <View
+            android:id="@+id/linea_datos_personales_perfil2"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_nombre_perfil" />
 
-    <TextView
-        android:id="@+id/gestionar_pendientes"
-        android:layout_width="328dp"
-        android:layout_height="37dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Descripcion de la Reserva"
-        android:textColor="@color/blue"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:id="@+id/textView_telefono_propietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Telefono"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="412dp"
-        android:layout_height="55dp"
-        android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
+        <TextView
+            android:id="@+id/textView_container_telefono_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="325272727"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil3"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_telefono_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_correo_propietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Correo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil3" />
 
         <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:backgroundTint="#00FFFFFF"
-            app:icon="@drawable/icon_menu"
-            app:iconSize="40dp"
-            app:iconTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/button_container_correo_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Camilccs11@gmail.com "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil3" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil4"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_container_correo_perfil" />
+
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil5"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="732dp" />
+
 
         <TextView
-            android:id="@+id/text_aqualuxe"
+            android:id="@+id/textView_Marca_vehiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="AQUALUXE"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </FrameLayout>
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Marca"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil5" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView_container_direccion_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="DODGE"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil5" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil6"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_direccion_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_container_ciudad_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="LLK-465"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil6" />
+
+        <View
+            android:id="@+id/linea_datos_vehiculo_2"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_ciudad_perfil" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/Color_placa_vahiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Color"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2" />
+
+        <EditText
+            android:id="@+id/campo_color_vehiculo"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Rojo"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2"
+            tools:layout_editor_absoluteX="145dp" />
+
+        <TextView
+            android:id="@+id/Recuadro_observaciones"
+            android:layout_width="296dp"
+            android:layout_height="152dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Observaciones"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Observaciones_vehiculo" />
+
+        <TextView
+            android:id="@+id/Observaciones_vehiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Observaciones (Opcional)"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_3" />
+
+        <Button
+            android:id="@+id/Confirmar_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/blue"
+            android:text="Confirmar Reservacion"
+            app:layout_constraintHorizontal_bias="0.433"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Recuadro_observaciones" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
