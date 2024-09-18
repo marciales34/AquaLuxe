@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.ReservasDisponibles">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="354dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299">
+
+
+        <TextView
+            android:id="@+id/text_autolavado"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="Nombre del autolavado"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_fecha"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="fecha"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_hora"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:text="hh:mm"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_detalles"
+            android:layout_width="342dp"
+            android:layout_height="129dp"
+            android:background="#00FFFFFF"
+            android:paddingRight="5dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            app:icon="@drawable/icon_flecha_derecha"
+            app:iconGravity="textEnd"
+            app:iconPadding="1dp"
+            app:iconSize="50dp"
+            app:iconTint="@color/black" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_reservas_disponibles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Reservas Disponibles"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/icon_menu"
+            app:iconSize="40dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_aqualuxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="AQUALUXE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

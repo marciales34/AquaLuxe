@@ -22,22 +22,6 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
-
-    <Button
-        android:id="@+id/btn_cliente"
-        android:layout_width="320dp"
-        android:layout_height="100dp"
-        android:backgroundTint="@color/blue"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Cliente"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.362" />
 
     <Button
@@ -54,6 +38,38 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58" />
+        app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/btn_cliente"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Cliente"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <Button
+        android:id="@+id/btn_super"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SuperAdmin"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

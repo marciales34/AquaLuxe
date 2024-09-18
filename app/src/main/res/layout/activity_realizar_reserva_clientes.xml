@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Clientes.RealizarReservaClientes">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="57dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/icon_menu"
+            app:iconSize="40dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_aqualuxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="AQUALUXE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_realizar_reservaciones_clientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Agendar Reserva"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/text_precio_total_numerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="$0.000"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <RelativeLayout
+        android:id="@+id/btn_reserva_agendada_cliente1"
+        android:layout_width="339dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#7DED3F"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275">
+
+        <LinearLayout
+            android:id="@+id/date_time_container"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/central_text_hora_reserva"
+            android:layout_toEndOf="@+id/date_time_container"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/central_text_hora_reserva"
+            android:layout_width="122dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="sans-serif-light"
+            android:text="11:30 AM"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/date_text_18_agosto_dispo"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="18 de agosto"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_vehiculo_reservas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Vehiculo"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/textView_paga_recoger_vehiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="¡Paga al recoger tu vehiculo!"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+        android:id="@+id/textView_servicios_reservas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Servicio"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/btn_agendar_reserva_cliente"
+        android:layout_width="255dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Agendar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <Spinner
+        android:id="@+id/spinner_vehiculo"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <Spinner
+        android:id="@+id/spinner_lavadero"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:id="@+id/text_precio_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Precio Total: "
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

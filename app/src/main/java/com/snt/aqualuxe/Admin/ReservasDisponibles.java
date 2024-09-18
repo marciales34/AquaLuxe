@@ -13,18 +13,27 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.snt.aqualuxe.R;
 
-public class CrearEmpleado extends AppCompatActivity {
+public class ReservasDisponibles extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_crear_empleado);
+        setContentView(R.layout.activity_reservas_disponibles);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        Button btn = findViewById(R.id.btn_detalles);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(ReservasDisponibles.this, ModificarReserva.class);
+                startActivity(intent);
+            }
+        });
     }
 }

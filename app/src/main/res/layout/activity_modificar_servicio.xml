@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SuperAdmin.ModificarServicio">
+
+    <Button
+        android:id="@+id/btn_empleado"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Guardar cambios"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/btn_eliminar_reserva"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Eliminar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <TextView
+        android:id="@+id/text_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <EditText
+        android:id="@+id/campo_precio"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_background"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorLink="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="414dp"
+        android:layout_height="52dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/icon_menu"
+            app:iconSize="40dp"
+            app:iconTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_aqualuxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="AQUALUXE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/campo_servicio"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_background"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorLink="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/text_modificar_servicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Modificar Servicio"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/text_servicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicio"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+</androidx.constraintlayout.widget.ConstraintLayout>

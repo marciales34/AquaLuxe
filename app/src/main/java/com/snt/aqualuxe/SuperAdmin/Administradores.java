@@ -1,4 +1,4 @@
-package com.snt.aqualuxe.Admin;
+package com.snt.aqualuxe.SuperAdmin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,62 +11,42 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.snt.aqualuxe.Clientes.PerfilClientes;
+import com.snt.aqualuxe.Admin.CrearEmpleado;
+import com.snt.aqualuxe.Admin.Empleados;
+import com.snt.aqualuxe.Admin.ModificarEmpleado;
 import com.snt.aqualuxe.R;
 
-public class InicioAdmin extends AppCompatActivity {
+public class Administradores extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio_admin);
+        setContentView(R.layout.activity_administradores);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Button btn = findViewById(R.id.btn_reservas);
+        Button btn = findViewById(R.id.btn_detalles);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Reservas.class);
+                Intent intent = new Intent(Administradores.this, ModificarAdministrador.class);
                 startActivity(intent);
             }
         });
 
-        Button btn2 = findViewById(R.id.btn_empleados);
+        Button btn2 = findViewById(R.id.btn_administrador);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Empleados.class);
+                Intent intent = new Intent(Administradores.this, CrearAdministrador.class);
                 startActivity(intent);
             }
         });
-
-
-        Button btn3 = findViewById(R.id.btn_autolavados);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, Autolavados.class);
-                startActivity(intent);
-            }
-        });
-
-        Button btn4 = findViewById(R.id.btn_perfil);
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(InicioAdmin.this, PerfilClientes.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

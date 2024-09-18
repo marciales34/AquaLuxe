@@ -36,6 +36,15 @@ public class Reservas extends AppCompatActivity {
             }
         });
 
+        Button btn2 = findViewById(R.id.btn_reservas_disponibles);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(Reservas.this, ReservasDisponibles.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

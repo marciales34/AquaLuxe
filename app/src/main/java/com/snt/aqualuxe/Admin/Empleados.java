@@ -26,17 +26,18 @@ public class Empleados extends AppCompatActivity {
             return insets;
         });
 
-        Button btn = findViewById(R.id.btn_empleados);
+
+        Button btn = findViewById(R.id.btn_detalles);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(Empleados.this, CrearEmpleado.class);
+                Intent intent = new Intent(Empleados.this, ModificarEmpleado.class);
                 startActivity(intent);
             }
         });
 
-        Button btn2 = findViewById(R.id.btn_empleados);
+        Button btn2 = findViewById(R.id.btn_empleado);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,5 +46,6 @@ public class Empleados extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".Clientes.perfilClientes"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-62dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="412dp"
+            android:layout_height="57dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#00FFFFFF"
+                app:icon="@drawable/icon_menu"
+                app:iconSize="40dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_aqualuxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="AQUALUXE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="128dp"
+            android:layout_height="101dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="28dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="256dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/profileImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Editar Imagen"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+        <TextView
+            android:id="@+id/text_datos_personales_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Datos Personales"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_datos_personales_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_nombre_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Nombre"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil" />
+
+        <TextView
+            android:id="@+id/textView_container_nombre_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Juan Camilo Bernal"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil2"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_nombre_perfil" />
+
+        <TextView
+            android:id="@+id/textView_correo_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Correo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
+
+        <TextView
+            android:id="@+id/textView_container_correo_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Juan@gmail.com"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil3"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_correo_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_contraseña_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Contraseña"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil3" />
+
+        <Button
+            android:id="@+id/button_container_contraseña_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Cambiar "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.894"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil3" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil4"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_container_contraseña_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_telefono_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Telefono"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil4" />
+
+        <TextView
+            android:id="@+id/textView_container_telefono_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="658658568"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil4" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil5"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_telefono_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_direccion_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Direccion"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil5" />
+
+        <TextView
+            android:id="@+id/textView_container_direccion_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Calle 34 #56 -67"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil5" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil6"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_direccion_perfil" />
+
+
+        <TextView
+            android:id="@+id/textView_ciudad_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Ciudad"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil6" />
+
+        <TextView
+            android:id="@+id/textView_container_ciudad_perfil"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Bogota D.C"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil6" />
+
+        <View
+            android:id="@+id/linea_datos_personales_perfil7"
+            android:layout_width="421dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/black"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_container_ciudad_perfil" />
+
+
+        <Button
+            android:id="@+id/btn_eliminar_cuenta"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Eliminar Cuenta"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil7" />
+
+        <Button
+            android:id="@+id/btn_actualizar_datos"
+            android:layout_width="255dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Actualizar Datos"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_cuenta" />
+
+
+        <TextView
+            android:id="@+id/textView_frasefinal_perfil"
+            android:layout_width="382dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Usamos esta informacion para verificar tu identidad y proteger nuestra comunidad"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_datos" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_frasefinal_perfil"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
