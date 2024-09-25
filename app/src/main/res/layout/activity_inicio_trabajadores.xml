@@ -8,6 +8,23 @@
     tools:layout_editor_absoluteY="80dp">
 
     <TextView
+        android:id="@+id/Bienvenida_trabajadores"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/montserrat_bold_italic"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <TextView
         android:id="@+id/text_perfil2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,21 +85,6 @@
         app:layout_constraintVertical_bias="0.356" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="548dp"
-        android:fontFamily="@font/montserrat_extrabold_italic"
-        android:text="BIENVENIDO"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.075" />
-
-    <TextView
         android:id="@+id/text_trabajador1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,7 +108,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
+        app:layout_constraintVertical_bias="0.042">
 
         <Button
             android:id="@+id/btn_menu"
