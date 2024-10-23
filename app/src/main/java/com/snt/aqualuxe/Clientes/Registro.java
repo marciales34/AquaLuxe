@@ -75,7 +75,7 @@ public class Registro extends AppCompatActivity {
         progressDialog.show();
 
         // URL de tu API para registrar usuario
-        String url = "https://9f7f-181-59-2-175.ngrok-free.app/usuarios/registrar"; // Cambia esto por tu IP local
+        String url = "https://596c-181-59-2-175.ngrok-free.app/usuarios/registrar"; // Cambia esto por tu IP local
 
         // Crear el objeto JSON para la solicitud
         JSONObject postData = new JSONObject();

@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageButton;
 
 import com.snt.aqualuxe.Admin.Autolavados;
 import com.snt.aqualuxe.Admin.Empleados;
@@ -25,8 +27,8 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
         getLayoutInflater().inflate(R.layout.activity_pagina_inicio_cliente, findViewById(R.id.frameLayout));
 
 
+        ImageButton btn = findViewById(R.id.btn_crear_reservas_clientes);
 
-        Button btn = findViewById(R.id.btn_crear_reservas_clientes);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,33 +37,28 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
                 startActivity(intent);
             }
         });
-
-        @SuppressLint("WrongViewCast") Button btn2 = findViewById(R.id.btn_vehiculos_clientes);
+        ImageButton btn2 = findViewById(R.id.btn_vehiculos_clientes);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
                 Intent intent = new Intent(PaginaInicioCliente.this, RegistrarVehiculosClientes.class);
                 startActivity(intent);
             }
         });
 
-
-        @SuppressLint("WrongViewCast") Button btn3 = findViewById(R.id.btn_autolavados_clientes);
+        ImageButton btn3 = findViewById(R.id.btn_autolavados_clientes);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
                 Intent intent = new Intent(PaginaInicioCliente.this, UbicacionClientes.class);
                 startActivity(intent);
             }
         });
 
-        Button btn4 = findViewById(R.id.btn_perfil);
+        ImageButton btn4 = findViewById(R.id.btn_perfil);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
                 Intent intent = new Intent(PaginaInicioCliente.this, PerfilClientes.class);
                 startActivity(intent);
             }
