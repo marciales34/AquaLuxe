@@ -1,6 +1,9 @@
 package com.snt.aqualuxe.Clientes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,5 +21,14 @@ public class RegistrarVehiculosClientes extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registrar_vehiculos_clientes);
 
+        Button btn = findViewById(R.id.btn_crear_vehiculos_clientes);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(RegistrarVehiculosClientes.this, GestionarVehiculosClientes.class);
+                startActivity(intent);
+            }
+        });
     }
 }

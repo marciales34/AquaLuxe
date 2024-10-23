@@ -1,7 +1,10 @@
 package com.snt.aqualuxe.Trabajadores;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.snt.aqualuxe.Clientes.PaginaInicioCliente;
+import com.snt.aqualuxe.Clientes.PaginaReservasClientes;
 import com.snt.aqualuxe.R;
 
 public class reservaTrabajadores extends AppCompatActivity {
@@ -18,5 +23,24 @@ public class reservaTrabajadores extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_reserva_trabajadores);
 
+        @SuppressLint("WrongViewCast") Button btn = findViewById(R.id.reservas_tr1);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(reservaTrabajadores.this, gestionarReservasPendientes.class);
+                startActivity(intent);
+            }
+        });
+
+        @SuppressLint("WrongViewCast") Button btn2 = findViewById(R.id.reservas_tr2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(reservaTrabajadores.this, gestionarReservasActivas.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,6 +1,7 @@
 package com.snt.aqualuxe.Clientes;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -65,6 +66,16 @@ public class AgendarReservasClientes extends AppCompatActivity {
                 showDatePickerDialog();
             }
         });
+
+        Button btn = findViewById(R.id.btn_continuar_disponibilidad_clientes2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(AgendarReservasClientes.this, RealizarReservaClientes.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void showDatePickerDialog() {
@@ -86,4 +97,5 @@ public class AgendarReservasClientes extends AppCompatActivity {
 
 
     }
+
 }
