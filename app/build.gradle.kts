@@ -36,14 +36,16 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.exifinterface)
     implementation(libs.play.services.maps)
+    implementation("com.android.volley:volley:1.2.1")
+    implementation ("com.google.android.gms:play-services-auth:20.6.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
