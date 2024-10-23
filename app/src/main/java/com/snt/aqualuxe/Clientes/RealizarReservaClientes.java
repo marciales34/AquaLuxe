@@ -12,9 +12,10 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class RealizarReservaClientes extends AppCompatActivity {
+public class RealizarReservaClientes extends BarraDeNavegacion {
 
     private Button btn_agendar_reserva_cliente;
 
@@ -22,7 +23,8 @@ public class RealizarReservaClientes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_realizar_reserva_clientes);
+        getLayoutInflater().inflate(R.layout.activity_realizar_reserva_clientes, findViewById(R.id.frameLayout));
+
 
         // Definir las opciones de los spinners
         String[] opcionesLavadero = {"Seleccionar servicio", "Lavado 1", "Lavado Premium", "Lavado Platinium"};

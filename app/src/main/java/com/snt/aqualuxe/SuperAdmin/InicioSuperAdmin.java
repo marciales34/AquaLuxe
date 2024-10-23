@@ -15,16 +15,18 @@ import com.snt.aqualuxe.Admin.Autolavados;
 import com.snt.aqualuxe.Admin.Empleados;
 import com.snt.aqualuxe.Admin.InicioAdmin;
 import com.snt.aqualuxe.Admin.Reservas;
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.Clientes.PerfilClientes;
 import com.snt.aqualuxe.R;
 
-public class InicioSuperAdmin extends AppCompatActivity {
+public class InicioSuperAdmin extends BarraDeNavegacion {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio_super_admin);
+        getLayoutInflater().inflate(R.layout.activity_inicio_super_admin, findViewById(R.id.frameLayout));
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

@@ -14,15 +14,17 @@ import androidx.core.view.WindowInsetsCompat;
 import com.snt.aqualuxe.Admin.CrearEmpleado;
 import com.snt.aqualuxe.Admin.Empleados;
 import com.snt.aqualuxe.Admin.ModificarEmpleado;
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class Administradores extends AppCompatActivity {
+public class Administradores extends BarraDeNavegacion {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_administradores);
+        // Establecer el contenido principal de VistaRoles en el frame de la barra de navegación
+        getLayoutInflater().inflate(R.layout.activity_administradores, findViewById(R.id.frameLayout));
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

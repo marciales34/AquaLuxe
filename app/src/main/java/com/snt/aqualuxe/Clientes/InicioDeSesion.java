@@ -21,6 +21,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.snt.aqualuxe.R;
+import com.snt.aqualuxe.Trabajadores.inicioTrabajadores;
+import com.snt.aqualuxe.VistaRoles;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -82,7 +84,6 @@ public class InicioDeSesion extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         // Crear la solicitud de inicio de sesión
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, postData,
@@ -95,21 +96,40 @@ public class InicioDeSesion extends AppCompatActivity {
                             // Verificar si el servidor devuelve el mensaje de éxito
                             String message = response.getString("message");
                             if (message.equals("Inicio de sesión exitoso")) {
+                                // Mostrar mensaje de éxito
                                 Toast.makeText(InicioDeSesion.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
 
-                                // Cambiar a la actividad de VistaRoles o AceptacionPermisos
-                                Intent intent = new Intent(InicioDeSesion.this, PaginaInicioCliente.class);
+                                // Obtener el rol del usuario de la respuesta JSON
+                                JSONObject usuario = response.getJSONObject("usuario");
+                                String rol = usuario.getString("rol");
+
+                                // Redirigir según el rol
+                                Intent intent;
+                                switch (rol) {
+                                    case "administrador":
+                                        intent = new Intent(InicioDeSesion.this, VistaRoles.class);
+                                        break;
+                                    case "trabajador":
+                                        intent = new Intent(InicioDeSesion.this, inicioTrabajadores.class);
+                                        break;
+                                    case "cliente":
+                                    default:
+                                        intent = new Intent(InicioDeSesion.this, PaginaInicioCliente.class);
+                                        break;
+                                }
+
                                 startActivity(intent);
-                                finish(); // Opcional: cerrar la actividad actual
+                                finish(); // Cerrar la actividad actual
+
                             } else {
-                                Toast.makeText(InicioDeSesion.this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+                                // Si las credenciales son incorrectas, mostrar mensaje de error
+                                Toast.makeText(InicioDeSesion.this, "Credenciales incorrectas, intenta nuevamente", Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            Toast.makeText(InicioDeSesion.this, "Error al procesar la respuesta", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(InicioDeSesion.this, "Error al procesar la respuesta del servidor", Toast.LENGTH_SHORT).show();
                         }
                     }
-
                 },
                 new Response.ErrorListener() {
                     @Override

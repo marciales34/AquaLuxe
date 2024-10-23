@@ -11,11 +11,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
 import java.util.Calendar;
 
-public class AgendarReservasClientes extends AppCompatActivity {
+public class AgendarReservasClientes extends BarraDeNavegacion {
 
     private Spinner spinnerOpciones;
     private Button btnSelectDate;
@@ -23,7 +24,7 @@ public class AgendarReservasClientes extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agendar_reservas_clientes);
+        getLayoutInflater().inflate(R.layout.activity_agendar_reservas_clientes, findViewById(R.id.frameLayout));
 
         spinnerOpciones = findViewById(R.id.spinner_opciones);
         btnSelectDate = findViewById(R.id.btn_select_date);

@@ -9,8 +9,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,14 +17,26 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aqualuxe"
-        android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="31">
+
+        <activity
+            android:name=".BarraDeNavegacion"
+            android:theme="@style/CustomMenuStyle"
+            android:exported="true" />
         <activity
             android:name=".VistaRoles"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".SuperAdmin.Administradores"
+            android:exported="true" />
+        <activity
+            android:name=".SuperAdmin.CrearAdministrador"
+            android:exported="true" />
+
         <activity
             android:name=".Clientes.PaginaReservasClientes"
             android:exported="false" />
@@ -37,9 +48,12 @@
             android:exported="false" />
         <activity
             android:name=".Admin.Autolavados"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Trabajadores.perfilTrabajador"
+            android:exported="true" />
+        <activity
+            android:name=".Trabajadores.gestionarReservasActivas"
             android:exported="true" />
         <activity
             android:name=".Admin.ModificarEmpleado"
@@ -52,21 +66,30 @@
             android:exported="false" />
         <activity
             android:name=".Admin.ModificarReserva"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Admin.CrearReserva"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Admin.Reservas"
             android:exported="false" />
         <activity
             android:name=".Admin.InicioAdmin"
             android:exported="false" />
+
         <activity
             android:name=".Trabajadores.inicioTrabajadores"
             android:exported="false" />
+
+        <activity
+            android:name=".Trabajadores.gestionarReservasPendientes"
+            android:exported="true" />
+
         <activity
             android:name=".Clientes.CambioFotoPerfil"
+            android:exported="true" />
+        <activity
+            android:name=".Clientes.CambioPasswordCliente"
             android:exported="true" />
         <activity
             android:name=".Clientes.AceptacionPermisos"

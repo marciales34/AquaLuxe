@@ -61,7 +61,7 @@
         android:background="@drawable/edit_text_background"
         android:fontFamily="@font/montserrat_light"
         android:hint="Ingrese su contraseña "
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:paddingStart="20dp"
         android:textAlignment="textStart"

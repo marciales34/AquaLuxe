@@ -23,4 +23,10 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:backgroundTint">@color/red</item>
     </style>
+
+    <!-- Estilo para el menú -->
+    <style name="CustomMenuStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/blue</item>
+    </style>
 </resources>
