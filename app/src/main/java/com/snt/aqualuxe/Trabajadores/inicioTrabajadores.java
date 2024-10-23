@@ -16,14 +16,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.snt.aqualuxe.Clientes.PaginaInicioCliente;
 import com.snt.aqualuxe.Clientes.PaginaReservasClientes;
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class inicioTrabajadores extends AppCompatActivity {
+public class inicioTrabajadores extends BarraDeNavegacion {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio_trabajadores);
+        getLayoutInflater().inflate(R.layout.activity_inicio_trabajadores, findViewById(R.id.frameLayout));
 
         Button btn = findViewById(R.id.btn_crear_reservas2);
         btn.setOnClickListener(new View.OnClickListener() {

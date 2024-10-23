@@ -4,8 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:layout_editor_absoluteX="-82dp"
     tools:layout_editor_absoluteY="80dp">
+
+    <TextView
+        android:id="@+id/text_trabajador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Menú Principal"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/btn_crear_reservas2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/green"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_editar_caleandario"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <Button
+        android:id="@+id/btn_perfil2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/darkblue"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_menu_perfil"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
 
     <TextView
         android:id="@+id/Bienvenida_trabajadores"
@@ -22,117 +75,35 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.189" />
 
     <TextView
         android:id="@+id/text_perfil2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Perfil"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
-
-    <Button
-        android:id="@+id/btn_perfil2"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:backgroundTint="@color/darkblue"
-        android:paddingLeft="28dp"
-        android:textAlignment="center"
-        app:cornerRadius="20dp"
-        app:icon="@drawable/icon_menu_perfil"
-        app:iconPadding="8dp"
-        app:iconSize="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.752" />
 
     <TextView
         android:id="@+id/text_reservas2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reservas"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_crear_reservas2"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:backgroundTint="@color/green"
-        android:paddingLeft="28dp"
-        android:textAlignment="center"
-        app:cornerRadius="20dp"
-        app:icon="@drawable/icon_editar_caleandario"
-        app:iconPadding="8dp"
-        app:iconSize="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.458" />
 
-    <TextView
-        android:id="@+id/text_trabajador1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Menú Principal"
-        android:textColor="@color/blue"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="412dp"
-        android:layout_height="55dp"
-        android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042">
-
-        <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:backgroundTint="#00FFFFFF"
-            app:icon="@drawable/icon_menu"
-            app:iconSize="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/text_aqualuxe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="AQUALUXE"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

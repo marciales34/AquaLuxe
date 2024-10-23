@@ -21,12 +21,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class GestionarVehiculosClientes extends AppCompatActivity {
+public class GestionarVehiculosClientes extends BarraDeNavegacion {
 
         private static final int PICK_IMAGE_REQUEST = 1;
         private static final int TAKE_PHOTO_REQUEST = 2;
@@ -43,7 +44,7 @@ public class GestionarVehiculosClientes extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             EdgeToEdge.enable(this);
-            setContentView(R.layout.activity_gestionar_vehiculos_clientes);
+            getLayoutInflater().inflate(R.layout.activity_gestionar_vehiculos_clientes, findViewById(R.id.frameLayout));
 
             fotosVehiculo1 = findViewById(R.id.fotos_vehiculo1);
             fotosVehiculo2 = findViewById(R.id.fotos_vehiculo2);

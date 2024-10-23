@@ -9,13 +9,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class gestionarReservasPendientes extends AppCompatActivity {
+public class gestionarReservasPendientes extends BarraDeNavegacion {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_gestionar_reservas_pendientes);
+        getLayoutInflater().inflate(R.layout.activity_gestionar_reservas_pendientes, findViewById(R.id.frameLayout));
+
     }
 }

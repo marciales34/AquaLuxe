@@ -16,60 +16,22 @@
         tools:layout_editor_absoluteY="-62dp">
 
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="412dp"
-            android:layout_height="57dp"
-            android:background="@color/blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.026">
-
-            <Button
-                android:id="@+id/btn_menu"
-                android:layout_width="84dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:backgroundTint="#00FFFFFF"
-                app:icon="@drawable/icon_menu"
-                app:iconSize="40dp"
-                app:iconTint="#FFFFFF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/text_aqualuxe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="AQUALUXE"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
         <TextView
             android:id="@+id/text_gestionar_vehiculos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="Datos de tu vehiculo"
             android:textAlignment="center"
             android:textColor="@color/blue"
             android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
 
         <TextView
             android:id="@+id/textView_marca_vehiculo"
@@ -303,24 +265,25 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
 
+
         <Button
             android:id="@+id/btn_eliminar_vehiculo"
             android:layout_width="255dp"
             android:layout_height="56dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:backgroundTint="@color/red"
             android:fontFamily="@font/montserrat_bold"
             android:text="Eliminar Vehiculo"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_vehiculo" />
 
-
         <View
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="80dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_vehiculo"

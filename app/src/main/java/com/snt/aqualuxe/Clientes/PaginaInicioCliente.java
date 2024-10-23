@@ -1,5 +1,6 @@
 package com.snt.aqualuxe.Clientes;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,15 +13,17 @@ import com.snt.aqualuxe.Admin.Autolavados;
 import com.snt.aqualuxe.Admin.Empleados;
 import com.snt.aqualuxe.Admin.InicioAdmin;
 import com.snt.aqualuxe.Admin.Reservas;
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class PaginaInicioCliente extends AppCompatActivity {
+public class PaginaInicioCliente extends BarraDeNavegacion {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pagina_inicio_cliente);
+        getLayoutInflater().inflate(R.layout.activity_pagina_inicio_cliente, findViewById(R.id.frameLayout));
+
 
 
         Button btn = findViewById(R.id.btn_crear_reservas_clientes);
@@ -33,7 +36,7 @@ public class PaginaInicioCliente extends AppCompatActivity {
             }
         });
 
-        Button btn2 = findViewById(R.id.btn_vehiculos_clientes);
+        @SuppressLint("WrongViewCast") Button btn2 = findViewById(R.id.btn_vehiculos_clientes);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +47,7 @@ public class PaginaInicioCliente extends AppCompatActivity {
         });
 
 
-        Button btn3 = findViewById(R.id.btn_autolavados_clientes);
+        @SuppressLint("WrongViewCast") Button btn3 = findViewById(R.id.btn_autolavados_clientes);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

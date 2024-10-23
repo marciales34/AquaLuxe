@@ -8,43 +8,6 @@
     android:background="@color/white"
     tools:context=".Admin.InicioAdmin">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="412dp"
-        android:layout_height="55dp"
-        android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
-
-        <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="84dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:backgroundTint="#00FFFFFF"
-            app:icon="@drawable/icon_menu"
-            app:iconSize="40dp"
-            app:iconTint="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/text_aqualuxe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="AQUALUXE"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-    </FrameLayout>
 
     <TextView
         android:id="@+id/text_menu_principal"
@@ -56,29 +19,23 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.067" />
-
-    <Button
-        android:id="@+id/btn_reservas"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:backgroundTint="@color/green"
-        android:paddingLeft="28dp"
-        android:textAlignment="center"
-        app:cornerRadius="20dp"
-        app:icon="@drawable/icon_editar_caleandario"
-        app:iconPadding="8dp"
-        app:iconSize="60dp"
-        app:iconTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/text_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
 
     <Button
         android:id="@+id/btn_empleados"
@@ -97,7 +54,35 @@
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/text_empleados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empleados"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/text_reservas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
 
     <Button
         android:id="@+id/btn_perfil"
@@ -116,7 +101,22 @@
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/text_autolavados"
+        android:layout_width="129dp"
+        android:layout_height="30dp"
+        android:text="Autolavados"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
 
     <Button
         android:id="@+id/btn_autolavados"
@@ -135,63 +135,25 @@
         app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569" />
+        app:layout_constraintVertical_bias="0.53" />
 
-    <TextView
-        android:id="@+id/text_reservas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reservas"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
-
-    <TextView
-        android:id="@+id/text_empleados"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Empleados"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
-
-    <TextView
-        android:id="@+id/text_autolavados"
-        android:layout_width="129dp"
-        android:layout_height="30dp"
-        android:text="Autolavados"
+    <Button
+        android:id="@+id/btn_reservas"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/green"
+        android:paddingLeft="28dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_editar_caleandario"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
-
-    <TextView
-        android:id="@+id/text_perfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Perfil"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.247" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

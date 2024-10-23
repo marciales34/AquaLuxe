@@ -39,8 +39,10 @@
             android:text="Azul"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2"
-            tools:layout_editor_absoluteX="145dp" />
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2" />
 
         <View
             android:id="@+id/linea_datos_vehiculo1"
@@ -138,6 +140,7 @@
 
         </RelativeLayout>
 
+
         <TextView
             android:id="@+id/texto_activas"
             android:layout_width="328dp"
@@ -148,49 +151,10 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-            app:layout_constraintVertical_bias="0.036" />
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="412dp"
-            android:layout_height="57dp"
-            android:background="@color/blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <Button
-                android:id="@+id/btn_menu"
-                android:layout_width="84dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:backgroundTint="#00FFFFFF"
-                app:icon="@drawable/icon_menu"
-                app:iconSize="40dp"
-                app:iconTint="#FFFFFF"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/text_aqualuxe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
-                android:layout_marginTop="4dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="AQUALUXE"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-        </FrameLayout>
-
+            app:layout_constraintVertical_bias="0.011" />
 
         <TextView
             android:id="@+id/datos_propietario"
@@ -200,23 +164,26 @@
             android:text="Datos del propietario"
             android:textColor="@color/black"
             android:textSize="28sp"
-            app:layout_constraintHorizontal_bias="0.162"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            tools:layout_editor_absoluteY="280dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recuadro"
+            app:layout_constraintVertical_bias="0.025" />
 
         <TextView
             android:id="@+id/datos_propietario3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Datos del vehiculo"
             android:textColor="@color/black"
             android:textSize="28sp"
-            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintHorizontal_bias="0.103"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:layout_editor_absoluteY="670dp" />
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil4" />
 
         <TextView
             android:id="@+id/cargar_imagenes"
@@ -366,17 +333,16 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_container_correo_perfil" />
 
-
         <View
             android:id="@+id/linea_datos_personales_perfil5"
             android:layout_width="421dp"
             android:layout_height="1dp"
+            android:layout_marginTop="24dp"
             android:background="@color/black"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.888"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:layout_editor_absoluteY="732dp" />
-
+            app:layout_constraintTop_toBottomOf="@+id/datos_propietario3" />
 
         <TextView
             android:id="@+id/textView_Marca_vehiculo"
@@ -448,10 +414,11 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="@android:color/transparent"
+            android:layout_height="70dp"
+            android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintTop_toBottomOf="@+id/Confirmar_R"
+             />
 
         <TextView
             android:id="@+id/Color_placa_vahiculo"
@@ -476,8 +443,10 @@
             android:text="Rojo"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2"
-            tools:layout_editor_absoluteX="145dp" />
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linea_datos_vehiculo_2" />
 
         <TextView
             android:id="@+id/Recuadro_observaciones"
@@ -489,7 +458,7 @@
             android:text="Observaciones"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintHorizontal_bias="0.577"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Observaciones_vehiculo" />
@@ -511,10 +480,10 @@
             android:id="@+id/Confirmar_R"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="@color/blue"
             android:text="Confirmar Reservacion"
-            app:layout_constraintHorizontal_bias="0.433"
+            android:textColor="#FFFFFF"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Recuadro_observaciones" />
