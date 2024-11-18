@@ -112,7 +112,7 @@ public class Registro extends AppCompatActivity {
                                     Toast.makeText(Registro.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
 
                                     // Cambiar a la actividad de inicio de sesión o donde quieras
-                                    Intent intent = new Intent(Registro.this, PaginaInicioCliente.class);
+                                    Intent intent = new Intent(Registro.this, AceptacionPermisos.class);
                                     startActivity(intent);
                                     finish(); // Opcional: cerrar la actividad actual
                                 } else {

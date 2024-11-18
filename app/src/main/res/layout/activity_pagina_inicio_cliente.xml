@@ -24,38 +24,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
-    <ImageButton
-        android:id="@+id/btn_crear_reservas_clientes"
+
+    <Button
+        android:id="@+id/btn_reservas_cliente"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:background="@drawable/rounded_button_background_green"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/icon_editar_caleandario"
+        android:backgroundTint="@color/green"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_editar_caleandario"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
-        app:tint="@null" />
+        app:layout_constraintVertical_bias="0.175" />
 
-    <ImageButton
-        android:id="@+id/btn_vehiculos_clientes"
+    <Button
+        android:id="@+id/btn_vehiculos"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/rounded_button_background_blue"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/vehiculo"
+        android:backgroundTint="@color/darkblue"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/vehiculo"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
-        app:tint="@null" />
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
         android:id="@+id/text_menu_principal"
@@ -87,21 +93,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.625" />
 
-    <ImageButton
-        android:id="@+id/btn_autolavados_clientes"
+    <Button
+        android:id="@+id/btn_autolavados"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/rounded_button_background_green"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/icon_ubicacion"
+        android:backgroundTint="@color/green"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_ubicacion"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505"
-        app:tint="@null" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/text_empleados"
@@ -118,21 +127,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.341" />
 
-    <ImageButton
-        android:id="@+id/btn_perfil"
+    <Button
+        android:id="@+id/btn_perfilCliente"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/rounded_button_background_blue"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/icon_menu_perfil"
+        android:backgroundTint="@color/darkblue"
+        android:paddingLeft="28dp"
+        android:textAlignment="center"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/icon_menu_perfil"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505"
-        app:tint="@null" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/text_perfil"

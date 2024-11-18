@@ -38,6 +38,23 @@
             android:exported="true" />
 
         <activity
+            android:name=".SuperAdmin.InicioSuperAdmin"
+            android:exported="true" />
+
+        <activity
+            android:name=".SuperAdmin.CrearServicio"
+            android:exported="true" />
+
+        <activity
+            android:name=".SuperAdmin.ModificarAdministrador"
+            android:exported="true" />
+        <activity
+            android:name=".SuperAdmin.ModificarServicio"
+            android:exported="true" />
+        <activity
+            android:name=".SuperAdmin.Servicios"
+            android:exported="true" />
+        <activity
             android:name=".Clientes.PaginaReservasClientes"
             android:exported="false" />
         <activity
@@ -50,29 +67,32 @@
             android:name=".Admin.Autolavados"
             android:exported="true" />
         <activity
-            android:name=".Trabajadores.perfilTrabajador"
+            android:name=".Admin.Empleados"
             android:exported="true" />
-        <activity
-            android:name=".Trabajadores.gestionarReservasActivas"
-            android:exported="true" />
-        <activity
-            android:name=".Admin.ModificarEmpleado"
-            android:exported="false" />
         <activity
             android:name=".Admin.CrearEmpleado"
-            android:exported="false" />
-        <activity
-            android:name=".Admin.Empleados"
-            android:exported="false" />
-        <activity
-            android:name=".Admin.ModificarReserva"
             android:exported="true" />
         <activity
             android:name=".Admin.CrearReserva"
             android:exported="true" />
         <activity
+            android:name=".Admin.ModificarEmpleado"
+            android:exported="true" />
+        <activity
+            android:name=".Admin.ModificarReserva"
+            android:exported="true" />
+        <activity
             android:name=".Admin.Reservas"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".Admin.ReservasDisponibles"
+            android:exported="true" />
+        <activity
+            android:name=".Trabajadores.perfilTrabajador"
+            android:exported="true" />
+        <activity
+            android:name=".Trabajadores.gestionarReservasActivas"
+            android:exported="true" />
         <activity
             android:name=".Admin.InicioAdmin"
             android:exported="false" />
@@ -83,6 +103,10 @@
 
         <activity
             android:name=".Trabajadores.gestionarReservasPendientes"
+            android:exported="true" />
+
+        <activity
+            android:name=".Trabajadores.reservaTrabajadores"
             android:exported="true" />
 
         <activity
@@ -114,6 +138,18 @@
             android:exported="true" />
         <activity
             android:name=".Clientes.PaginaInicioCliente"
+            android:exported="false" />
+
+        <activity
+            android:name=".Clientes.RealizarReservaClientes"
+            android:exported="false" />
+
+        <activity
+            android:name=".Clientes.RegistrarVehiculosClientes"
+            android:exported="false" />
+
+        <activity
+            android:name=".Clientes.UbicacionClientes"
             android:exported="false" />
         <activity
             android:name=".Clientes.MainActivity"

@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -57,6 +58,16 @@ public class CambioFotoPerfil extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_STORAGE_PERMISSION);
             } else {
                 showImageSourceDialog();
+            }
+        });
+
+        Button btn = findViewById(R.id.btn_cambiofotocontinuar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear un Intent para abrir la nueva actividad
+                Intent intent = new Intent(CambioFotoPerfil.this, PaginaInicioCliente.class);
+                startActivity(intent);
             }
         });
     }
