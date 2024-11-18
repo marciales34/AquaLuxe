@@ -27,7 +27,7 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
         getLayoutInflater().inflate(R.layout.activity_pagina_inicio_cliente, findViewById(R.id.frameLayout));
 
 
-        ImageButton btn = findViewById(R.id.btn_crear_reservas_clientes);
+        Button btn = findViewById(R.id.btn_reservas_cliente);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +37,7 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
                 startActivity(intent);
             }
         });
-        ImageButton btn2 = findViewById(R.id.btn_vehiculos_clientes);
+        Button btn2 = findViewById(R.id.btn_vehiculos);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +46,7 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
             }
         });
 
-        ImageButton btn3 = findViewById(R.id.btn_autolavados_clientes);
+        Button btn3 = findViewById(R.id.btn_autolavados);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +55,7 @@ public class PaginaInicioCliente extends BarraDeNavegacion {
             }
         });
 
-        ImageButton btn4 = findViewById(R.id.btn_perfil);
+        Button btn4 = findViewById(R.id.btn_perfilCliente);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

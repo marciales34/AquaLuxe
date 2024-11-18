@@ -19,12 +19,12 @@ import com.snt.aqualuxe.Clientes.PaginaReservasClientes;
 import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
 
-public class reservaTrabajadores extends AppCompatActivity {
+public class reservaTrabajadores extends BarraDeNavegacion{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_reserva_trabajadores);
+        getLayoutInflater().inflate(R.layout.activity_reserva_trabajadores, findViewById(R.id.frameLayout));
 
         RelativeLayout btn = findViewById(R.id.reservas_tr1);
         btn.setOnClickListener(new View.OnClickListener() {
