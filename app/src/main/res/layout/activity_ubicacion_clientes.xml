@@ -19,17 +19,16 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/textView_seleccionar_punto_cercano"
         android:layout_width="317dp"
         android:layout_height="55dp"
         android:fontFamily="@font/montserrat_light"
-        android:text="Selecciona el punto mas cercano a tu ubicacion"
+        android:text="Selecciona el punto más cercano a tu ubicación"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16dp"
@@ -37,37 +36,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintVertical_bias="0.134" />
+
+    <!-- Fragmento del mapa -->
+
+    <!-- Botón flotante para actualizar ubicación -->
+
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="361dp"
+        android:layout_height="357dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <Button
-        android:id="@+id/btn_seleccionar_ruta"
-        android:layout_width="255dp"
-        android:layout_height="56dp"
+        android:id="@+id/btn_ubicacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="@color/blue"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Seleccionar ruta"
+        android:text="Ver en el Mapa: Lavadero 1"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.769" />
 
     <Button
-        android:id="@+id/btn_establecer_ruta"
-        android:layout_width="255dp"
-        android:layout_height="56dp"
+        android:id="@+id/btn_ubicacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Establecer ruta"
+        android:text="Ver en el Mapa: Lavadero 2"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
+        app:layout_constraintVertical_bias="0.825" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,6 +42,8 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.exifinterface)
     implementation(libs.play.services.maps)
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation("com.android.volley:volley:1.2.1")
     implementation ("com.google.android.gms:play-services-auth:20.6.0")
     testImplementation(libs.junit)
