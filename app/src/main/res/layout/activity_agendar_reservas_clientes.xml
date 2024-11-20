@@ -5,21 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
+
     android:background="#F5F5F5">
+
+    <!-- Campo de Fecha -->
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reservación de Servicio de Autolavado"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#2C3E50"
         android:layout_marginBottom="24dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="Reservación de Servicio de Autolavado"
+        android:textColor="#2C3E50"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <!-- Campo de Fecha -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,6 +51,7 @@
         android:textColor="#000000"
         android:textSize="16sp" />
 
+
     <EditText
         android:id="@+id/hora"
         android:layout_width="match_parent"
@@ -60,9 +62,9 @@
         android:hint="Selecciona la hora"
         android:importantForAccessibility="yes"
         android:inputType="none"
-        android:padding="12dp" />
-
-
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,6 +122,7 @@
         android:contentDescription="Selecciona el usuario"
         android:background="@drawable/edit_text_background"
         android:textColor="#2C3E50"
+        android:textColorHint="#000000"
         android:padding="12dp" />
 
     <!-- Campo de Autolavado -->

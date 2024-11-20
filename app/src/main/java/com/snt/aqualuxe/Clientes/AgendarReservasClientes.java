@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.snt.aqualuxe.BarraDeNavegacion;
@@ -105,21 +108,24 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
         usuarioList.add(String.valueOf(userId));  // Agrega el userId como texto en el Spinner
 
         // Crear un ArrayAdapter con el valor que contiene solo el userId
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, usuarioList);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_item, usuarioList);
+
+        // Configurar el diseño desplegable (drop-down)
+                adapter.setDropDownViewResource(R.layout.spinner_item); // Usa el mismo diseño para el menú desplegable
 
         // Establecer el adaptador al Spinner
-        usuarioSpinner.setAdapter(adapter);
+                usuarioSpinner.setAdapter(adapter);
 
         // Deshabilitar el Spinner para que no se pueda editar ni cambiar
-        usuarioSpinner.setEnabled(false);
+                usuarioSpinner.setEnabled(false);
 
         // Si el ID es válido, realizamos la petición
-        if (userId != 0) {
-            obtenerVehiculos(userId); // Llamamos a la función pasando el ID
-        } else {
-            Toast.makeText(this, "Error: ID de usuario no válido", Toast.LENGTH_SHORT).show();
-        }
+                if (userId != 0) {
+                    obtenerVehiculos(userId); // Llamamos a la función pasando el ID
+                } else {
+                    Toast.makeText(this, "Error: ID de usuario no válido", Toast.LENGTH_SHORT).show();
+                }
+
 
         spinnerAutolavados = findViewById(R.id.autolavado_spinner);
         obtenerAutolavados();
@@ -156,7 +162,6 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
 
     }
 
-
     private void obtenerServicios() {
         // Inicializa Retrofit
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
@@ -180,13 +185,28 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
                         spinnerItems.add(new ServicioSpinnerItem(servicio.getId(), servicio.getNombre()));
                     }
 
-                    // Configura el adaptador del Spinner
-                    ArrayAdapter<ServicioSpinnerItem> adapter = new ArrayAdapter<>(
+                    // Configura el adaptador del Spinner con diseño personalizado
+                    ArrayAdapter<ServicioSpinnerItem> adapter = new ArrayAdapter<ServicioSpinnerItem>(
                             AgendarReservasClientes.this,
-                            android.R.layout.simple_spinner_item,
+                            R.layout.spinner_item, // Diseño para el elemento seleccionado
                             spinnerItems
-                    );
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    ) {
+                        @Override
+                        public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                            // Usar diseño personalizado para los elementos desplegables
+                            if (convertView == null) {
+                                LayoutInflater inflater = LayoutInflater.from(getContext());
+                                convertView = inflater.inflate(R.layout.spinner_item, parent, false);
+                            }
+
+                            // Configurar el texto del elemento
+                            TextView textView = (TextView) convertView;
+                            textView.setText(getItem(position).toString());
+                            return convertView;
+                        }
+                    };
+
+                    adapter.setDropDownViewResource(R.layout.spinner_item); // Diseño desplegable
                     spinnerServicios.setAdapter(adapter);
                 } else {
                     Toast.makeText(AgendarReservasClientes.this, "No se encontraron servicios", Toast.LENGTH_SHORT).show();
@@ -199,6 +219,8 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
             }
         });
     }
+
+
 
     // Método para obtener el ID del servicio seleccionado
     public int getServicioSeleccionadoId() {
@@ -232,12 +254,29 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
                         vehiculosSpinner.add(new VehiculoSpinnerItem(vehiculo.getId(), vehiculo.getPlaca()));
                     }
 
-                    // Crear un adaptador para el Spinner
-                    ArrayAdapter<VehiculoSpinnerItem> adapter = new ArrayAdapter<>(AgendarReservasClientes.this,
-                            android.R.layout.simple_spinner_item, vehiculosSpinner);
+                    // Crear un adaptador para el Spinner usando `spinner_item`
+                    ArrayAdapter<VehiculoSpinnerItem> adapter = new ArrayAdapter<VehiculoSpinnerItem>(
+                            AgendarReservasClientes.this,
+                            R.layout.spinner_item, // Diseño personalizado para el elemento seleccionado
+                            vehiculosSpinner
+                    ) {
+                        @Override
+                        public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                            // Usar el mismo diseño para los elementos desplegables
+                            if (convertView == null) {
+                                LayoutInflater inflater = LayoutInflater.from(getContext());
+                                convertView = inflater.inflate(R.layout.spinner_item, parent, false);
+                            }
+
+                            // Configurar el texto del elemento
+                            TextView textView = (TextView) convertView;
+                            textView.setText(getItem(position).toString());
+                            return convertView;
+                        }
+                    };
 
                     // Establecer el adaptador al Spinner
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    adapter.setDropDownViewResource(R.layout.spinner_item); // Diseño desplegable
                     spinnerVehiculos.setAdapter(adapter);
 
                     // Agregar el listener para la selección de un vehículo
@@ -277,6 +316,7 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
         });
     }
 
+
     private void obtenerAutolavados() {
         // Crear instancia de Retrofit
         Retrofit retrofit = RetrofitClient.getRetrofitInstance();
@@ -303,10 +343,10 @@ public class AgendarReservasClientes extends BarraDeNavegacion {
 
                     // Crear el adaptador para el Spinner
                     ArrayAdapter<Autolavado> adapter = new ArrayAdapter<>(AgendarReservasClientes.this,
-                            android.R.layout.simple_spinner_item, autolavadosSpinner);
+                            R.layout.spinner_item, autolavadosSpinner);
 
                     // Establecer el adaptador al Spinner
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    adapter.setDropDownViewResource(R.layout.spinner_item);
                     spinnerAutolavados.setAdapter(adapter);
 
                     // Agregar un listener para la selección de un autolavado

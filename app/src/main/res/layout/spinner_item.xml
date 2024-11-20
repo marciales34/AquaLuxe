@@ -5,4 +5,5 @@
     android:fontFamily="@font/montserrat_light"
     android:padding="10dp"
     android:textColor="#000000"
+    android:background="@color/gray"
     android:textSize="18dp" />
