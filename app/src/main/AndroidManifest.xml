@@ -8,6 +8,9 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -23,6 +26,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aqualuxe"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCosTs9UHRx9srV6SIqqCFTRTproZibXQo" />
 
         <activity
             android:name=".BarraDeNavegacion"
@@ -134,16 +141,17 @@
         <activity
             android:name=".Clientes.GestionarVehiculosClientes"
             android:exported="true" />
+
         <activity
             android:name=".Clientes.AgendarReservasClientes"
             android:exported="true" />
         <activity
             android:name=".Clientes.PaginaInicioCliente"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".Clientes.RealizarReservaClientes"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".Clientes.RegistrarVehiculosClientes"
@@ -151,7 +159,7 @@
 
         <activity
             android:name=".Clientes.UbicacionClientes"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Clientes.MainActivity"
             android:exported="true">

@@ -47,21 +47,19 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gestionar_vehiculos" />
 
-        <TextView
-            android:id="@+id/textView_container_nombre_perfil"
+        <EditText
+            android:id="@+id/editTextMarca"
             android:layout_width="348dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
             android:fontFamily="@font/montserrat_light"
-            android:text="BMW Z4"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_marca_vehiculo" />
-
 
         <TextView
             android:id="@+id/textView_tipo_vehiculo"
@@ -75,16 +73,15 @@
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_nombre_perfil" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextMarca" />
 
-        <TextView
-            android:id="@+id/textView_container_tipo_vehiculo"
+        <EditText
+            android:id="@+id/editTextTipo"
             android:layout_width="348dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
             android:fontFamily="@font/montserrat_light"
-            android:text="Deportivo"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.494"
@@ -104,16 +101,15 @@
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_tipo_vehiculo" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTipo" />
 
-        <TextView
-            android:id="@+id/textView_container_modelo_vehiculo"
+        <EditText
+            android:id="@+id/editTextModelo"
             android:layout_width="348dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
             android:fontFamily="@font/montserrat_light"
-            android:text="2024"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.494"
@@ -133,16 +129,15 @@
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_modelo_vehiculo" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextModelo" />
 
-        <TextView
-            android:id="@+id/textView_container_placa_vehiculo"
+        <EditText
+            android:id="@+id/editTextPlaca"
             android:layout_width="348dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
             android:fontFamily="@font/montserrat_light"
-            android:text="FALLINI"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.494"
@@ -162,23 +157,21 @@
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_placa_vehiculo" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextPlaca" />
 
-        <TextView
-            android:id="@+id/textView_container_color_vehiculo"
+        <EditText
+            android:id="@+id/editTextColor"
             android:layout_width="348dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_background"
             android:fontFamily="@font/montserrat_light"
-            android:text="Negro"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_color_vehiculo" />
-
 
         <TextView
             android:id="@+id/textView_cargar_imagenes_vehiculo"
@@ -192,7 +185,7 @@
             app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView_container_color_vehiculo" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextColor" />
 
 
         <Button
@@ -210,20 +203,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_cargar_imagenes_vehiculo" />
 
-        <ImageView
-            android:id="@+id/fotos_vehiculo2"
-            android:layout_width="150dp"
-            android:layout_height="137dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="32dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/carroo2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.833"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
 
         <ImageView
             android:id="@+id/fotos_vehiculo1"
@@ -235,11 +214,9 @@
             android:scaleType="centerCrop"
             android:src="@drawable/carroo2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.162"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
-
 
         <View
             android:id="@+id/linea_datos_personales_perfil2"
@@ -252,13 +229,13 @@
             app:layout_constraintTop_toBottomOf="@+id/fotos_vehiculo1" />
 
         <Button
-            android:id="@+id/btn_actualizar_vehiculo"
+            android:id="@+id/btn_registrar_vehiculo"
             android:layout_width="255dp"
             android:layout_height="56dp"
             android:layout_marginTop="28dp"
             android:backgroundTint="@color/blue"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Actualizar Vehiculo"
+            android:text="Registrar Vehiculo"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -266,27 +243,12 @@
             app:layout_constraintTop_toBottomOf="@+id/linea_datos_personales_perfil2" />
 
 
-        <Button
-            android:id="@+id/btn_eliminar_vehiculo"
-            android:layout_width="255dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="@color/red"
-            android:fontFamily="@font/montserrat_bold"
-            android:text="Eliminar Vehiculo"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_vehiculo" />
-
         <View
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_eliminar_vehiculo"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registrar_vehiculo"
             app:layout_constraintVertical_bias="1.0"
             tools:layout_editor_absoluteX="0dp" />
 

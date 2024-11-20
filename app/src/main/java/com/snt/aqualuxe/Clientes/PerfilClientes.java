@@ -2,14 +2,18 @@ package com.snt.aqualuxe.Clientes;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,12 +24,22 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.exifinterface.media.ExifInterface;
 
+import com.snt.aqualuxe.BarraDeNavegacion;
 import com.snt.aqualuxe.R;
+import com.snt.aqualuxe.RetrofitClient;
+import com.snt.aqualuxe.serviciosClientes.Usuario;
+import com.snt.aqualuxe.serviciosClientes.UsuarioApi;
+import com.snt.aqualuxe.serviciosVehiculo.VehiculosResponse;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class PerfilClientes extends AppCompatActivity {
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+
+public class PerfilClientes extends BarraDeNavegacion {
 
     private static final int PICK_IMAGE_REQUEST = 1;
     private static final int TAKE_PHOTO_REQUEST = 2;
@@ -35,11 +49,29 @@ public class PerfilClientes extends AppCompatActivity {
     private ImageView profileImageView;
     private Button selectImageButton;
 
+    private TextView textViewNombre;
+    private TextView textViewCorreo;
+    private TextView textViewTelefono;
+    private TextView textViewCiudad;
+    private TextView textViewDireccion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_perfil_clientes);
+        getLayoutInflater().inflate(R.layout.activity_perfil_clientes, findViewById(R.id.frameLayout));
+
+        SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
+        int userId = Integer.parseInt(sharedPreferences.getString("userID", "0"));
+
+        // Si el ID es válido, realizamos la petición
+        if (userId != 0) {
+            obtenerDatosUsuario(userId); // Llamamos a la función pasando el ID
+        } else {
+            Toast.makeText(this, "Error: ID de usuario no válido", Toast.LENGTH_SHORT).show();
+        }
+
+
 
         profileImageView = findViewById(R.id.profileImageView);
         selectImageButton = findViewById(R.id.selectImageButton);
@@ -167,6 +199,52 @@ public class PerfilClientes extends AppCompatActivity {
                 // Puedes mostrar un mensaje al usuario aquí
             }
         }
+    }
+
+    private void obtenerDatosUsuario(int userId) {
+        // Crear la instancia de Retrofit
+        Retrofit retrofit = RetrofitClient.getRetrofitInstance();
+        UsuarioApi usuarioApi = retrofit.create(UsuarioApi.class);
+
+        // Hacer la llamada a la API
+        Call<Usuario> call = usuarioApi.obtenerUsuarioPorId(userId);
+        call.enqueue(new Callback<Usuario>() {
+            @Override
+            public void onResponse(Call<Usuario> call, Response<Usuario> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    Usuario usuario = response.body();
+
+                    // Actualizar los TextViews con los datos del usuario
+                    textViewNombre = findViewById(R.id.textView_container_nombre_perfil);
+                    textViewCorreo = findViewById(R.id.textView_container_correo_perfil);
+                    textViewTelefono = findViewById(R.id.textView_container_telefono_perfil);
+                    textViewCiudad = findViewById(R.id.textView_container_ciudad_perfil);
+                    textViewDireccion = findViewById(R.id.textView_container_direccion_perfil); // Asegúrate de que este ID sea correcto
+
+                    textViewNombre.setText(usuario.getNombre());
+                    textViewCorreo.setText(usuario.getCorreo());
+                    textViewTelefono.setText(usuario.getTelefono());
+                    textViewCiudad.setText(usuario.getCiudad());
+                    textViewDireccion.setText(usuario.getDireccion());
+                } else {
+                    // Agregar logs para depuración
+                    Log.e("PerfilClientes", "Error en la respuesta: " + response.code());
+                    if (response.errorBody() != null) {
+                        try {
+                            Log.e("PerfilClientes", "Cuerpo de la respuesta: " + response.errorBody().string());
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+                    Toast.makeText(PerfilClientes.this, "Error al obtener datos del usuario", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Usuario> call, Throwable t) {
+                Toast.makeText(PerfilClientes.this, "Error de conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }
