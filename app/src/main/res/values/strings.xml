@@ -3,4 +3,5 @@
     <string name="title_activity_ubicacion_prueba">UbicacionPrueba</string>
     <string name="title_activity_prueba">PRUEBA</string>
     <string name="google_sign_in_button_description">Sign in with Google</string>
+    <string name="url_api">https://fcd7-181-59-2-175.ngrok-free.app</string>
 </resources>

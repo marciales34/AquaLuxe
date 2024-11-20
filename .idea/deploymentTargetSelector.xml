@@ -4,16 +4,19 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-22T21:47:47.360372300Z">
+        <DropdownSelection timestamp="2024-11-19T20:31:32.994026Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=4a6b4676" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=1a423e4b" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="Empleados">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ModificarAutolavado">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

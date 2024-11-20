@@ -87,7 +87,7 @@
         android:layout_height="48dp"
         android:background="@drawable/rounded_background"
         android:ems="10"
-        android:inputType="time"
+        android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

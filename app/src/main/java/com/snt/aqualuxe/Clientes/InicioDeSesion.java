@@ -20,6 +20,7 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.snt.aqualuxe.Admin.InicioAdmin;
 import com.snt.aqualuxe.R;
 import com.snt.aqualuxe.Trabajadores.inicioTrabajadores;
 import com.snt.aqualuxe.VistaRoles;
@@ -73,7 +74,7 @@ public class InicioDeSesion extends AppCompatActivity {
         progressDialog.show();
 
         // URL de tu API para iniciar sesión
-        String url = "https://596c-181-59-2-175.ngrok-free.app/usuarios/login"; // Cambia esto por tu IP local
+        String url = getString(R.string.url_api)+"/usuarios/login"; // Cambia esto por tu IP local
         Log.d("InicioDeSesion", "URL de inicio de sesión: " + url); // Log para la URL
 
         // Crear el objeto JSON para la solicitud
@@ -107,7 +108,7 @@ public class InicioDeSesion extends AppCompatActivity {
                                 Intent intent;
                                 switch (rol) {
                                     case "administrador":
-                                        intent = new Intent(InicioDeSesion.this, VistaRoles.class);
+                                        intent = new Intent(InicioDeSesion.this, InicioAdmin.class);
                                         break;
                                     case "trabajador":
                                         intent = new Intent(InicioDeSesion.this, inicioTrabajadores.class);

@@ -23,57 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.082" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="354dp"
-        android:layout_height="140dp"
-        android:background="@drawable/rounded_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492">
 
-
-        <TextView
-            android:id="@+id/text_autolavado"
-            android:layout_width="252dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-
-            android:text="Nombre del autolavado"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/text_ubicacion"
-            android:layout_width="252dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="60dp"
-
-            android:text="Ubicacion del autolavado"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btn_detalles"
-            android:layout_width="342dp"
-            android:layout_height="129dp"
-            android:background="#00FFFFFF"
-            android:paddingRight="5dp"
-            android:textAlignment="textEnd"
-            android:textColor="@color/black"
-            app:icon="@drawable/icon_flecha_derecha"
-            app:iconGravity="textEnd"
-            app:iconPadding="1dp"
-            app:iconSize="50dp"
-            app:iconTint="@color/black" />
-    </FrameLayout>
 
     <Button
         android:id="@+id/btn_autolavados"
@@ -107,10 +57,22 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.345" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_autolavados"
+        android:layout_width="412dp"
+        android:layout_height="479dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

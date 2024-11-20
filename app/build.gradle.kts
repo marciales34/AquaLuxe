@@ -44,6 +44,8 @@ dependencies {
     implementation(libs.play.services.maps)
     implementation("com.android.volley:volley:1.2.1")
     implementation ("com.google.android.gms:play-services-auth:20.6.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
