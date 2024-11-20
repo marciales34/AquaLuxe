@@ -140,16 +140,17 @@
         <activity
             android:name=".Clientes.GestionarVehiculosClientes"
             android:exported="true" />
+
         <activity
             android:name=".Clientes.AgendarReservasClientes"
             android:exported="true" />
         <activity
             android:name=".Clientes.PaginaInicioCliente"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".Clientes.RealizarReservaClientes"
-            android:exported="false" />
+            android:exported="true" />
 
         <activity
             android:name=".Clientes.RegistrarVehiculosClientes"

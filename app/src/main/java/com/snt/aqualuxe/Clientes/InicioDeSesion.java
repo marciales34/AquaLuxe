@@ -2,6 +2,7 @@ package com.snt.aqualuxe.Clientes;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -73,7 +74,7 @@ public class InicioDeSesion extends AppCompatActivity {
         progressDialog.show();
 
         // URL de tu API para iniciar sesión
-        String url = "https://596c-181-59-2-175.ngrok-free.app/usuarios/login"; // Cambia esto por tu IP local
+        String url = "https://fcd7-181-59-2-175.ngrok-free.app/usuarios/login"; // Cambia esto por tu IP local
         Log.d("InicioDeSesion", "URL de inicio de sesión: " + url); // Log para la URL
 
         // Crear el objeto JSON para la solicitud
@@ -103,6 +104,16 @@ public class InicioDeSesion extends AppCompatActivity {
                                 JSONObject usuario = response.getJSONObject("usuario");
                                 String rol = usuario.getString("rol");
 
+                                // Guardar el ID del usuario en SharedPreferences
+                                String userId = usuario.getString("id"); // Asegúrate de que "id" es el campo correcto en tu respuesta JSON
+                                SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                editor.putString("userID", userId);  // Guardamos el ID del usuario
+                                editor.apply();  // Aplicamos los cambios
+
+                                // Mostrar el ID guardado en un Toast
+                                Toast.makeText(InicioDeSesion.this, "ID guardado: " + userId, Toast.LENGTH_LONG).show();
+
                                 // Redirigir según el rol
                                 Intent intent;
                                 switch (rol) {
@@ -120,7 +131,6 @@ public class InicioDeSesion extends AppCompatActivity {
 
                                 startActivity(intent);
                                 finish(); // Cerrar la actividad actual
-
                             } else {
                                 // Si las credenciales son incorrectas, mostrar mensaje de error
                                 Toast.makeText(InicioDeSesion.this, "Credenciales incorrectas, intenta nuevamente", Toast.LENGTH_SHORT).show();
@@ -130,6 +140,8 @@ public class InicioDeSesion extends AppCompatActivity {
                             Toast.makeText(InicioDeSesion.this, "Error al procesar la respuesta del servidor", Toast.LENGTH_SHORT).show();
                         }
                     }
+
+
                 },
                 new Response.ErrorListener() {
                     @Override
