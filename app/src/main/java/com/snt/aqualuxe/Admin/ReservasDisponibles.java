@@ -27,14 +27,6 @@ public class ReservasDisponibles extends BarraDeNavegacion {
             return insets;
         });
 
-        Button btn = findViewById(R.id.btn_detalles);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Crear un Intent para abrir la nueva actividad
-                Intent intent = new Intent(ReservasDisponibles.this, ModificarReserva.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

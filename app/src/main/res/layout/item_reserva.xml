@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout2"
+    android:layout_width="354dp"
+    android:layout_height="190dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/rounded_background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.491"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.211">
+
+
+    <TextView
+        android:id="@+id/text_placa"
+        android:layout_width="252dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Nombre del autolavado"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_servicio"
+        android:layout_width="252dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="servicio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_autolavado"
+        android:layout_width="252dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:text="servicio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_fecha"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="fecha"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_hora"
+        android:layout_width="119dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="hh:mm"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</FrameLayout>
